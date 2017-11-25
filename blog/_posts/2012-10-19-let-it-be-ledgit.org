@@ -1,0 +1,35 @@
+---
+title: Let It Be Ledgit
+layout: post
+tags:
+  - emacs
+  - ledger
+  - accounting
+---
+
+First I called it LedgeIt. Then I thought ledge isn't
+even a real english verb, so why not make it some more
+artsy-fartsy. Call it ledgit, seems legit to me.
+And now I found out, that this term is in the urban dictionary. I
+think it's the right name for that script.
+
+A friend of mine introduced me to the magnificent commandline
+accounting tool [[https://github.com/jwiegley/ledger][ledger]].
+I like the idea a lot, but I miss the comfort of having all banking
+account transactions synchronized automatically. So I wrote [[https://github.com/leoc/ledgit][ledgit]].
+
+Ledgit provides a simple procedure. First it reads your ledger files
+and creates an index, so it can later on approximate the right ledger
+accounts and transaction names for the synchronized entries. Then it
+invokes the account handlers, which logs into the online banking
+website, downloads the last transactions as CSV and parses the data
+into a hash structure, that the generic ledgit method may use to
+update your ledger files.
+
+I would love to see some people writing handlers for
+different online banking websites. It's basically surfing the website
+via the ~mechanize~ gem.
+
+To get a clue of the API that handler class
+has to implement, have a look at
+[[https://github.com/leoc/ledgit/blob/master/lib/handler/dkb.rb][leoc/ledgit/lib/handler/dkb.rb]].

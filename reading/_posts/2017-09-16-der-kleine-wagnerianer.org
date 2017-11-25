@@ -1,0 +1,9 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/18363750-der-kleine-wagnerianer
+title: 'Der kleine Wagnerianer'
+tags:
+- musik
+rating: 3
+with_note: false
+---

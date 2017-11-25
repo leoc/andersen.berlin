@@ -1,0 +1,36 @@
+---
+title: "Gem: EM::SystemCommand"
+layout: post
+tags:
+  - eventmachine
+  - ruby
+  - gem
+---
+I just published my first ruby gem. It's called ~EM::SystemCommand~
+and serves as an abstration to popen3 calls. You can easily execute
+system commands and handle the data that's been written to their
+~stdout~ or ~stderr~.
+
+Check it out its [[http://leoc.github.com/em-systemcommand][Github Page]].
+
+Here is a basic example:
+
+#+begin_src ruby
+EM.run do
+  ps = EM::SystemCommand.new 'my_command' do |on|
+    on.success do |ps|
+      puts 'Success!'
+    end
+
+    on.failure do |ps|
+      puts 'Failure!'
+    end
+
+    on.stdout.line do |line|
+      puts "Line received: #{line}"
+    end
+  end
+
+  ps.stdin << "some data"
+end
+#+end_src

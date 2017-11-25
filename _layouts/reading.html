@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div id="content">
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 itemprop="name headline"><a href="{{page.url}}">{{ page.title }}</a></h1>
+    </header>
+    <div class="meta">
+	<span class="date"><time datetime="{{ page.date | date_to_xmlschema }}">Finished {{ page.date | date: "%b %-d, %Y" }}</time></span>
+	{% if page.tags.size != 0 %}—{% endif %}
+	<span class="tag">{{page.tags | join: ", "}}</span>
+	{% if page.rating %}
+	—
+	<span class="stars" data-rating="{{ page.rating }}"></span>
+	{% endif %}
+	— <a href="{{ page.link }}" target="_blank">Via Goodreads</a>
+    </div>
+    <div class="content" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </article>
+</div>

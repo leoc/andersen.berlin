@@ -1,0 +1,9 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/33379758-der-finanzwesir---was-sie-ber-vermogensaufbau-wirklich-wissen-m-ssen-i
+title: Der Finanzwesir - Was Sie über Vermogensaufbau wirklich wissen müssen. Intelligent
+  Geld Anlegen Und Finanzielle Freiheit Erlangen Mit Etf Und Index-Fonds
+tags: []
+rating: 4
+with_note: false
+---

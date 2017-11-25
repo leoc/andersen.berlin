@@ -1,0 +1,20 @@
+---
+title: Emacs ... Finally?
+layout: post
+---
+
+Over the past few years I have been changing my development
+environments regularly. I began using a simple editor like nano or the
+windows editor (shame on me, but it's the only good software you get
+with windows)
+
+Lately I have settled down using TextMate on the Mac for all of my
+ruby development.
+It's a fairly neat editor but I'm running linux on my workstation so I
+always have to run against my habits when changing the environments.
+That's kind of annoying.
+
+[[../../../../../img/emacs.png]]
+
+A friend suggested emacs and what I can tell for now is that it's a
+pretty neat thing!

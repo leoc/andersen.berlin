@@ -1,0 +1,10 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/25073935-nonviolent-communication
+title: 'Nonviolent Communication: A Language of Life, 3rd Edition: Life-Changing Tools
+  for Healthy Relationships'
+tags:
+- soft-skills
+rating: 5
+with_note: false
+---

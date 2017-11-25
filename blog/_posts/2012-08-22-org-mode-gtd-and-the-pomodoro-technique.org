@@ -1,0 +1,243 @@
+---
+title: Org-mode, GTD and the Pomodoro technique
+layout: post
+tags:
+  - organisation
+  - org-mode
+  - emacs
+  - pomodoro
+  - gtd
+---
+
+I have been struggling with keeping myself organized for some time
+now. I think just as much as anyone else out there. I have tried
+different todo apps and different techniques.
+
+Before I switched to a ThinkPad as my main working horse I had a
+MacBook. Those Mac devs definitly know how to make apps nice and
+shiny, but no app really fitted my needs. They may be polished
+and integrate in OS X' overall looks, but they implement a likely
+limited usability of Macintoshs aswell.
+
+I have been using Emacs as my main development environment for some
+time on the mac so I gave org-mode a try. And just as much as I
+learned to love Emacs I learned to love org-mode.
+
+As technique to force myself to focus on tasks that my brain refuses
+to keep focus on I became accustomed to the pomodoro technique. Some
+people may condemn it as a stupid timer flow and yes it's nothing
+else. But at least anyone that hears the term knows what I'm talking
+about.
+
+Let me introduce you to my org-mode configuration.
+
+Most of the ideas come from Bernt Hansen. Check out his
+[[http://doc.norang.ca/org-mode.html][ingenious documentation]].
+
+For my configuration I took some of his ideas and tried to adapt them
+to my needs. The results can be found in the [[https://github.com/leoc/org-helpers.el][org-helpers.el]] package.
+I cleaned up some code and made some functions more generic. Because I
+decided to go with the pomodoro technique I did not take over the
+clocking functions. For the pomodoro functions I did a rewrite of the
+~org-pomodoro~ package which was written by [[https://github.com/lolownia][Marcin Kozey]]. Have a look at my
+[[https://github.com/leoc/org-pomodoro][Github project (leoc/org-pomodoro)]].
+
+In the following sections I will explain my
+~.emacs.d/leoc/leoc-org.el~.
+
+The file extension associations, bindings and requirements are trivial.
+
+#+begin_src elisp
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(add-to-list 'auto-mode-alist '("\\.org_archive$" . org-mode))
+
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c b") 'org-iswitchb)
+
+(require 'org-habit)
+(require 'org-helpers)
+(require 'org-pomodoro)
+#+end_src
+
+Because I want to use pomodoro technique I clock into full
+pomodoros. That makes clocking out obsolete. If I want to start a new
+pomodoro I have to kill the running one first. This is done by the
+~org-pomodoro~ function.
+
+#+begin_src elisp
+(global-set-key (kbd "C-c C-x C-i") 'org-pomodoro)
+(global-set-key (kbd "C-c C-x C-o") 'org-pomodoro)
+#+end_src
+
+Tasks may be ~TODO~, actionable tasks are declared as ~NEXT~ and
+finished tasks are ~DONE~. Then there are tasks that are inactive.
+Eithere they are ~WAITING~ for an event to happen, they are on ~HOLD~
+for an unspecified amount of time (which means they have been worked
+on), they are declared for ~SOMEDAY~ in the future or they are
+~CANCELLED~.
+
+#+begin_src elisp
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d!/!)")
+        (sequence "WAITING(w@/!)" "HOLD(h@/!)" "SOMEDAY(o)" "|" "CANCELLED(c@/!)")))
+#+end_src
+
+The agenda tasks are split into different files. I added their archive
+files aswell, because I like to have a look in the logs aswell.
+
+#+begin_src elisp
+(setq org-agenda-files (list "~/.org/tasks.org"
+                             "~/.org/tasks.org_archive"
+                             "~/.org/projects.org"
+                             "~/.org/projects.org_archive"
+                             "~/.org/job.org"
+                             "~/.org/job.org_archive"
+                             "~/.org/calendar.org"))
+#+end_src
+
+I have a file called ~inbox.org~ where I put anything that comes to my
+mind. When I
+
+#+begin_src elisp
+(setq org-capture-templates
+      '(("r" "Todo" entry (file+headline "~/.org/inbox.org" "Inbox")
+         "* TODO %?")
+        ("j" "Journal" entry (file+datetree "~/.org/journal.org")
+         (file "~/.org/templates/review"))))
+#+end_src
+
+For those two capture templates I assigned specific key bindings.
+
+#+begin_src elisp
+(define-key global-map "\C-cr"
+  (lambda () (interactive) (org-capture nil "r")))
+(define-key global-map "\C-cj"
+  (lambda () (interactive) (org-capture nil "j")))
+#+end_src
+
+To configure the habits I have found the following to be quite useful.
+
+#+begin_src elisp
+;; display teh tags farther right
+(setq org-agenda-tags-column -102)
+;; display the org-habit graph right of the tags
+(setq org-habit-graph-column 102)
+(setq org-habit-following-days 7)
+(setq org-habit-preceding-days 21)
+#+end_src
+
+In the agenda mode I like to have the possibility to restrict to
+projects or subtrees at point. When widened the agenda only shows the
+top-level projects. When I restrict to a project alls subprojects and
+subtasks are shown. Furthermore I want to be able to quickly start
+pomodoros for tasks at point.
+
+#+begin_src elisp
+(defun custom-org-agenda-mode-defaults ()
+  (org-defkey org-agenda-mode-map "W" 'oh/agenda-remove-restriction)
+  (org-defkey org-agenda-mode-map "N" 'oh/agenda-restrict-to-subtree)
+  (org-defkey org-agenda-mode-map "P" 'oh/agenda-restrict-to-project)
+  (org-defkey org-agenda-mode-map "q" 'bury-buffer)
+  (org-defkey org-agenda-mode-map "I" 'org-pomodoro)
+  (org-defkey org-agenda-mode-map "O" 'org-pomodoro)
+  (org-defkey org-agenda-mode-map (kbd "C-c C-x C-i") 'org-pomodoro)
+  (org-defkey org-agenda-mode-map (kbd "C-c C-x C-o") 'org-pomodoro))
+
+(add-hook 'org-agenda-mode-hook 'custom-org-agenda-mode-defaults 'append)
+#+end_src
+
+Now we come to the heart of my configuration. The custom agenda
+commands. I have the same overview as Bernt Hansen does. It works
+pretty well. Tasks declared ~SOMEDAY~ are not shown in any
+agenda. I use the main agenda ~a~ most of the time, which is a
+combination of all the different views. First there is the daily
+agenda, then I have the tasks to refile. Then the List of stuck
+projects and the list of actionable ~NEXT~ tasks.
+
+Then there is a list of available tasks, which shows only single tasks
+unless the agenda is restricted to a subtree. If it is, then the
+available tasks for this subtree are shown.
+
+As described earlier the list of projects lists only the top-level
+projects, unless you have restricted the view to a subtree. Then the
+subprojects of that particular subtree are shown.
+
+Last, there is a list of "Waiting or Postponed Tasks", where tasks
+declared ~WAITING~ or ~HOLD~ are shown.
+
+#+begin_src elisp
+(setq org-agenda-custom-commands
+      '(("a" "Agenda"
+       ((agenda "" nil)
+          (alltodo ""
+                   ((org-agenda-overriding-header "Tasks to Refile")
+                    (org-agenda-files '("~/.org/inbox.org"))
+                    (org-agenda-skip-function
+                     '(oh/agenda-skip :headline-if-restricted-and '(todo)))))
+          (tags-todo "-CANCELLED/!-HOLD-WAITING"
+                     ((org-agenda-overriding-header "Stuck Projects")
+                      (org-agenda-skip-function
+                       '(oh/agenda-skip :subtree-if '(inactive non-project non-stuck-project habit scheduled deadline)))))
+          (tags-todo "-WAITING-CANCELLED/!NEXT"
+                     ((org-agenda-overriding-header "Next Tasks")
+                      (org-agenda-skip-function
+                       '(oh/agenda-skip :subtree-if '(inactive project habit scheduled deadline)))
+                      (org-tags-match-list-sublevels t)
+                      (org-agenda-sorting-strategy '(todo-state-down effort-up category-keep))))
+          (tags-todo "-CANCELLED/!-NEXT-HOLD-WAITING"
+                     ((org-agenda-overriding-header "Available Tasks")
+                      (org-agenda-skip-function
+                       '(oh/agenda-skip :headline-if '(project)
+                                        :subtree-if '(inactive habit scheduled deadline)
+                                        :subtree-if-unrestricted-and '(subtask)
+                                        :subtree-if-restricted-and '(single-task)))
+                      (org-agenda-sorting-strategy '(category-keep))))
+          (tags-todo "-CANCELLED/!"
+                     ((org-agenda-overriding-header "Currently Active Projects")
+                      (org-agenda-skip-function
+                       '(oh/agenda-skip :subtree-if '(non-project stuck-project inactive habit)
+                                        :headline-if-unrestricted-and '(subproject)
+                                        :headline-if-restricted-and '(top-project)))
+                      (org-agenda-sorting-strategy '(category-keep))))
+          (tags-todo "-CANCELLED/!WAITING|HOLD"
+                     ((org-agenda-overriding-header "Waiting and Postponed Tasks")
+                      (org-agenda-skip-function
+                       '(oh/agenda-skip :subtree-if '(project habit))))))
+         nil)
+        ("r" "Tasks to Refile" alltodo ""
+         ((org-agenda-overriding-header "Tasks to Refile")
+          (org-agenda-files '("~/.org/inbox.org"))))
+        ("#" "Stuck Projects" tags-todo "-CANCELLED/!-HOLD-WAITING"
+         ((org-agenda-overriding-header "Stuck Projects")
+          (org-agenda-skip-function
+           '(oh/agenda-skip :subtree-if '(inactive non-project non-stuck-project
+                                          habit scheduled deadline)))))
+        ("n" "Next Tasks" tags-todo "-WAITING-CANCELLED/!NEXT"
+         ((org-agenda-overriding-header "Next Tasks")
+          (org-agenda-skip-function
+           '(oh/agenda-skip :subtree-if '(inactive project habit scheduled deadline)))
+          (org-tags-match-list-sublevels t)
+          (org-agenda-sorting-strategy '(todo-state-down effort-up category-keep))))
+        ("R" "Tasks" tags-todo "-CANCELLED/!-NEXT-HOLD-WAITING"
+         ((org-agenda-overriding-header "Available Tasks")
+          (org-agenda-skip-function
+           '(oh/agenda-skip :headline-if '(project)
+                            :subtree-if '(inactive habit scheduled deadline)
+                            :subtree-if-unrestricted-and '(subtask)
+                            :subtree-if-restricted-and '(single-task)))
+          (org-agenda-sorting-strategy '(category-keep))))
+        ("p" "Projects" tags-todo "-CANCELLED/!"
+         ((org-agenda-overriding-header "Currently Active Projects")
+          (org-agenda-skip-function
+           '(oh/agenda-skip :subtree-if '(non-project inactive habit)))
+              (org-agenda-sorting-strategy '(category-keep))
+              (org-tags-match-list-sublevels 'indented)))
+        ("w" "Waiting Tasks" tags-todo "-CANCELLED/!WAITING|HOLD"
+         ((org-agenda-overriding-header "Waiting and Postponed Tasks")
+          (org-agenda-skip-function '(oh/agenda-skip :subtree-if '(project habit)))))))
+#+end_src
+
+The main helper method here is the ~oh/agenda-skip~ functions, which
+allows to generically skip headlines or subtrees, whether restricted
+or unrestricted.

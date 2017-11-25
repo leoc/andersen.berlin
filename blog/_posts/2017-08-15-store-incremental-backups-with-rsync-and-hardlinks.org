@@ -1,0 +1,56 @@
+---
+title: "Store incremental backups with rsync and hardlinks"
+layout: post
+tags:
+  - backup
+  - script
+  - ruby
+---
+This script stores backups on a remote server in your network via
+rsync. To spare disk space and speed up the backup process the rsync
+command uses hardlinks to only transfer incremental backups.
+
+Credits to morhekil, who wrote a shell script to backup to a local
+folder: https://gist.github.com/morhekil/8382294.
+
+#+BEGIN_SRC ruby
+  #!/usr/bin/env ruby
+
+  $host = 'ssh-hostname'
+  $rsync_bin = '/usr/bin/rsync'
+  $local_backup_path = '/home/arthur'
+  $remote_backup_path = '/backup/thinkpad'
+  $relative_link_target = '..'
+  $verbose = true
+  $dry_run = false
+  $excludes = [
+    'arthur/projects/**/tmp',
+    'arthur/projects/**/log',
+    'arthur/.cache'
+  ]
+
+  def ssh(command)
+    puts "--- ssh dmt \"#{command}\"" if $verbose
+    `ssh #{$host} "#{command}"`.strip
+  end
+
+  ssh("mkdir -p \"#{$remote_backup_path}\"")
+  timestamp = ssh('date +"%Y.%m.%d.%H.%M.%S"')
+  remote_target_path = "#{$remote_backup_path}/#{timestamp}"
+
+  last_backup = ssh("ls -1 #{$remote_backup_path} | tail -n1")
+  link_target_path = File.join($relative_link_target, last_backup)
+
+  rsync_options = ''
+  rsync_options += ' -v' if $verbose
+  rsync_options += ' -n' if $dry_run
+  rsync_options += " --link-dest=#{link_target_path}" unless link_target_path == ''
+  $excludes.each do |exclude|
+    rsync_options += " --exclude '#{exclude}'"
+  end
+
+  puts "--- #{$rsync_bin} -a --progress --delete#{rsync_options} '#{$local_backup_path}' #{$host}:#{remote_target_path}"
+  system("#{$rsync_bin} -a --progress --delete #{rsync_options} '#{$local_backup_path}' #{$host}:#{remote_target_path}")
+#+END_SRC
+
+I will work out a way to delete old backups later.

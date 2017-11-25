@@ -1,0 +1,8 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/6486483-emotional-intelligence-2-0
+title: Emotional Intelligence 2.0
+tags: []
+rating: 4
+with_note: false
+---

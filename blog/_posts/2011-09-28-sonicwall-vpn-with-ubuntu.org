@@ -1,0 +1,43 @@
+---
+title: SonicWALL VPN with Ubuntu
+layout: post
+tags:
+  - admin
+  - sonicwall
+  - linux
+  - vpn
+---
+
+The company I work for has a great new Virtual Private Network. Before
+it was powered by OpenVPN and a linux box. But because noone wanted to
+hire administrators who know how to work with linux systems, the
+boss got mad and bought a all-in-one enterprise firewall and VPN
+solution. That was the SonicWALL.
+
+Unfortunately it is hard or simply impossible to connect a linux
+system to those SonicWALLs. if someone has a clue how to do it without
+the help of a Windows Virtual Machine, please enlighten me!
+
+Anyway, to solve my lost of connection I used a virtual machine with
+Windows XP. And routed all traffic to the VPN client running on that
+machine.
+
+To use that method go through the following steps:
+
+ 1. Configure a Windows XP VBox with two Network Interfaces (one Bridged, one Host-Only)
+ 2. Install the Sonicwall VPN Client software
+ 3. Click on the newly created "SonicWALL VPN Connection" in your System configurations Network Connections Overview and choose Properties. On The 'Advanced' Tab enable 'Allow network users to connect through this computer's Internet connection' and use the Host-Only Adapter for 'Home network connection'
+ 4. The TCP/IP settings for the host-only adapter should change to something like 192.168.0.1/255.255.55.0. If not, configure this manually.
+ 5. In your Ubuntu system, configure the Host-Only vboxnet to use a static IP 192.168.0.2/255.255.255.0. The 192.168.0.1 should be "pingable" from within your Ubuntu host.
+ 6. Now set up the routes: ~sudo route add -net 10.0.0.0 gw 192.168.0.1 netmask 255.0.0.0 dev vboxnet7~ (where vboxnet7 is my Host-Only Adapter)
+ 7. Reconnect the SonicWALL VPN Client
+
+Now you should be able to access the VPNs machines.
+
+To make the routes permanent, you may create a file ~static-route~ in
+~/etc/network/if-up.d~ which may look like this:
+
+#+begin_src sh
+#!/bin/sh
+/sbin/route add -net 10.0.0.0 gw 192.168.0.1 netmask 255.0.0.0 dev vboxnet7
+#+end_src

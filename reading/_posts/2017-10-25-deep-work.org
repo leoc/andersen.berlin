@@ -1,0 +1,8 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/28383248-deep-work
+title: 'Deep Work: Rules for Focused Success in a Distracted World'
+tags: []
+rating: 5
+with_note: false
+---

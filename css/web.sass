@@ -1,0 +1,172 @@
+---
+---
+*
+  box-sizing: border-box
+
+body
+  background: #fff
+  font-size: 14px
+  margin: 0
+  color: #021723
+  font-family: sans-serif, sans
+
+ul
+  margin: 0
+  padding: 0
+
+h1,h2,h3,h4,h5,h6
+  margin: 0
+  padding: 0
+
+header
+  font-size: 24px
+  line-height: 24px
+  text-transform: uppercase
+  font-weight: bold
+
+.container
+  width: 100%
+  max-width: 1300px
+  padding: 82px 32px
+  margin: 0 auto
+  display: -webkit-flex
+  display: flex
+
+  #main, #sub
+    -webkit-flex: none
+    flex: none
+    padding: 16px
+
+  #main
+    text-align: right
+    width: 320px
+  #sub
+    width: 140px
+  #content
+    -webkit-flex: 1
+    flex: 1
+    padding: 16px
+
+p
+  max-width: 650px
+
+.highlight
+  pre
+    padding: 8px
+    margin: 0
+
+nav
+  text-transform: uppercase
+
+  a
+    text-decoration: none
+    font-weight: bold
+    color: #021723
+
+  ul
+    list-style: none
+    margin: 0
+    margin-top: 32px
+    padding: 0
+    li + li
+      margin: 5px 0 0 0
+
+nav#sub
+  a
+    font-weight: normal
+
+ul.posts
+  list-style: none
+
+  li.year-heading
+    font-size: 24px
+    line-height: 24px
+    font-weight: bold
+    margin: 0 0 32px 0
+  li + li.year-heading
+    margin-top: 48px
+
+  li.post
+    margin: 16px 0
+    line-height: 20px
+
+    .title
+      font-weight: bold
+      a
+        text-decoration: none
+        color: #021723
+    .meta
+      color: #bbb
+      font-style: italic
+
+      a
+        color: #bbb
+        text-decoration: none
+
+#content
+  header h1
+    font-size: 24px
+    line-height: 24px
+    margin-bottom: 32px
+#content
+  article.post
+    header
+      h1
+        margin-bottom: 0
+        font-size: 24px
+        line-height: 24px
+
+        a
+          font-size: 24px
+          text-decoration: none
+          color: #021723
+
+    .meta
+      font-size: 10px
+      line-height: 32px
+      color: #aaa
+      font-style: italic
+
+      a
+        color: #bbb
+        text-decoration: none
+
+div.content
+  line-height: 21px
+  p
+    margin: 8px 0
+  p:first-child
+    margin-top: 0
+
+.noheading
+  padding: 70px 16px 0 100px !important
+
+.welcome
+  font-family: serif
+  font-weight: 100
+  font-size: 18px
+  font-style: italic
+  line-height: 24px !important
+  p
+    margin: 18px 0 !important
+  p:first-child
+    margin-top: 0 !important
+
+.stars[data-rating='1']:before
+  content: "★"
+.stars[data-rating='2']:before
+  content: "★★"
+.stars[data-rating='3']:before
+  content: "★★★"
+.stars[data-rating='4']:before
+  content: "★★★★"
+.stars[data-rating='5']:before
+  content: "★★★★★"
+
+a
+  color: #0080ee
+  text-decoration: none
+
+a[href*="//"]:after
+  content: '↪'
+  margin-left: 4px

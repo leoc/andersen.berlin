@@ -1,0 +1,53 @@
+---
+layout: post
+tags:
+  - archlinux
+  - til
+---
+The kernel developer decided to change the default for ~intel_iommu~.
+
+Some machines have problems after the update. Either not booting at
+all or throwing messages like these around:
+
+#+BEGIN_EXAMPLE
+Oct 08 13:26:28 eigen kernel: DMAR: DRHD: handling fault status reg 3
+Oct 08 13:26:28 eigen kernel: DMAR: [DMA Write] Request device [00:02.0] fault addr 3a87000 [fault reason 23] Unknown
+Oct 08 13:26:28 eigen kernel: DMAR: DRHD: handling fault status reg 3
+Oct 08 13:26:28 eigen kernel: DMAR: [DMA Write] Request device [00:02.0] fault addr 3a84000 [fault reason 23] Unknown
+Oct 08 13:26:28 eigen kernel: DMAR: DRHD: handling fault status reg 3
+Oct 08 13:26:28 eigen kernel: DMAR: [DMA Read] Request device [00:02.0] fault addr 7ea000 [fault reason 23] Unknown
+Oct 08 13:26:31 eigen kernel: [drm:fw_domains_get [i915]] *ERROR* render: timed out waiting for forcewake ack to clear.
+#+END_EXAMPLE
+
+or
+
+#+BEGIN_EXAMPLE
+Oct 08 13:49:23 eigen kernel: DMAR: DRHD: handling fault status reg 3
+Oct 08 13:49:23 eigen kernel: DMAR: [DMA Write] Request device [00:02.0] fault addr 3568000 [fault reason 23] Unknown
+Oct 08 13:49:23 eigen kernel: DMAR: DRHD: handling fault status reg 3
+Oct 08 13:49:23 eigen kernel: DMAR: [DMA Write] Request device [00:02.0] fault addr 35aa000 [fault reason 23] Unknown
+Oct 08 13:49:23 eigen kernel: DMAR: DRHD: handling fault status reg 2
+Oct 08 13:49:23 eigen kernel: DMAR: [DMA Write] Request device [00:02.0] fault addr 35ec000 [fault reason 23] Unknown
+Oct 08 13:49:32 eigen kernel: [drm] GPU HANG: ecode 8:0:0x85dffffb, in chromium [1112], reason: Hang on rcs0, action: reset
+Oct 08 13:49:32 eigen kernel: [drm] GPU hangs can indicate a bug anywhere in the entire gfx stack, including userspace.
+Oct 08 13:49:32 eigen kernel: [drm] Please file a _new_ bug report on bugs.freedesktop.org against DRI -> DRM/Intel
+Oct 08 13:49:32 eigen kernel: [drm] drm/i915 developers can then reassign to the right component if it's not a kernel issue.
+Oct 08 13:49:32 eigen kernel: [drm] The gpu crash dump is required to analyze gpu hangs, so please always attach it.
+Oct 08 13:49:32 eigen kernel: [drm] GPU crash dump saved to /sys/class/drm/card0/error
+Oct 08 13:49:32 eigen kernel: drm/i915: Resetting chip after gpu hang
+Oct 08 13:49:32 eigen systemd[1]: Starting autorandr execution hook...
+Oct 08 13:49:40 eigen kernel: drm/i915: Resetting chip after gpu hang
+#+END_EXAMPLE
+
+I found a hint on how to fix this issue in the [[https://bbs.archlinux.org/viewtopic.php?id=230362][Archlinux forums]].
+
+Try booting linux with ~intel_iommu=off~ or ~intel_iommu=igfx_off~ (in the grub
+menu hit =e= to edit the boot command)
+
+To make it permanent add the respective flag to ~/etc/default/grub~ and run:
+
+#+BEGIN_SRC shell
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+#+END_SRC
+
+This should fix the issue.

@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<nav id="sub">
+  <header>Reading</header>
+  <ul>
+    {% assign date = '' %}
+    {% for post in site.categories.reading %}
+    {% assign current_date = post.date | date: "%Y" %}
+    {% if current_date != date %}
+    <li><a href="#y{{ current_date }}">{{ current_date }}</a></li>
+    {% assign date = current_date %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+<div id="content">
+  <ul class="posts">
+    {% assign date = '' %}
+    {% for post in site.categories.reading %}
+    {% assign current_date = post.date | date: "%Y" %}
+    {% if current_date != date %}
+    <li id="y{{current_date}}" class="year-heading">{{ current_date }}</li>
+    {% assign date = current_date %}
+    {% endif %}
+    <li class="post">
+      <div class="title">
+	{% if post.with_note %}
+	<a href="{{site.baseurl}}{{post.url}}">
+	{% endif %}
+	{{post.title}}
+	</a>
+	{% if post.with_note %}
+	</a>
+	{% endif %}
+      </div>
+      <div class="meta">
+	<span class="date"><time datetime="{{ post.date | date_to_xmlschema }}">Finished {{ post.date | date: "%b %-d, %Y" }}</time></span>
+	{% if post.tags.size != 0 %}—{% endif %}
+	<span class="tag">{{post.tags | join: ", "}}</span>
+	{% if post.rating %}
+	—
+	<span class="stars" data-rating="{{ post.rating }}"></span>
+	{% endif %}
+	— <a href="{{ post.link }}" target="_blank">Via Goodreads</a>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

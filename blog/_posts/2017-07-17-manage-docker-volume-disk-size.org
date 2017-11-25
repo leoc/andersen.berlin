@@ -1,0 +1,42 @@
+---
+title: "Manage Docker Volume Disk Size"
+layout: post
+tags:
+  - docker
+  - til
+---
+Today I was confused about the missing disk space on my development
+machine. I ran ~ncdu /~ only to find out that a lot of the disk is
+used by docker volumes.
+
+So I began investigating which volumes are actually taking this much
+space:
+
+#+BEGIN_SRC shell
+docker system df -v
+#+END_SRC
+
+Which showed a lot of local volumes that were taking a lot of GB.
+These were the result of containers which mounted volumes to the wrong
+endpoint within the container, so that the volumes grew heavily.
+
+I deleted the largest container first (40 GB):
+
+#+BEGIN_SRC shell
+docker volume rm <VOLUME_NAME>
+#+END_SRC
+
+But then decided to find dangling volumes:
+
+#+BEGIN_SRC shell
+docker volume ls -q -f dangling=true
+#+END_SRC
+
+These can be easily removed via:
+
+#+BEGIN_SRC shell
+docker volume rm `docker volume ls -q -f dangling=true`
+#+END_SRC
+
+This should be executed from time to time, to remove volumes which
+surreptitiously took a lot of your disk space.

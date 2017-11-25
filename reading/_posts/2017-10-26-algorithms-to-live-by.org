@@ -1,0 +1,8 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/33279921-algorithms-to-live-by
+title: 'Algorithms to Live By: The Computer Science of Human Decisions'
+tags: []
+rating: 3
+with_note: false
+---
