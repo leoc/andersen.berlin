@@ -1,0 +1,19 @@
+---
+layout: post
+title: Install Ruby < 2.3 on Archlinux and OpenSSL 1.1.x
+tags:
+  - ruby
+  - archlinux
+  - openssl1.1
+  - til
+---
+Archlinux updated OpenSSL to 1.1.x. Earlier versions of ruby (< 2.3)
+depend on OpenSSL 1.0. Thus we have to install ~openssl-1.0~ via pacman
+and set the environment variables before installing one of the older rubies.
+
+#+BEGIN_SRC shell
+export PKG_CONFIG_PATH=/usr/lib/openssl-1.0/pkgconfig
+export CFLAGS="$CFLAGS -I/usr/include/openssl-1.0"
+export LDFLAGS="$LDFLAGS -L/usr/lib/openssl-1.0 -lssl"
+rvm reinstall ruby-2.1
+#+END_SRC

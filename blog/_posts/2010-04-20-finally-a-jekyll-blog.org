@@ -1,0 +1,36 @@
+---
+title: Finally A Jekyll Blog
+layout: post
+tags:
+  - blogging
+---
+Alright. There I am. Another cool guy with a blog powered by Jekyll.
+
+Now I just need some content. A typical problem.
+
+Anyway. The setup is fairly simple. I am using two directories for the
+blog.
+
+One ~/srv/blog/source~, in which I export the current repository data.
+One ~/srv/blog/public~, where Jekyll puts the generated page files.
+
+Then I just had to install the following script as ~post-update~ hook
+for my blog repository which executes this rule on every push.
+
+#+begin_src sh
+#!/bin/sh
+rm -rf /srv/blog/source/*
+git --bare --git-dir=/home/git/repositories/blog.git archive master | tar xC /srv/blog/source
+jekyll /srv/blog/source /srv/blog/public
+#+end_src
+
+Do not forget to make the hook executable:
+
+#+begin_src sh
+$ chown +x /home/git/repositories/blog.git/hooks/post-update
+#+end_src
+
+Afterwards I configured my web server to serve my files from ~/srv/blog/public~
+
+Now with every push to my blogs repository it will automatically get deployed.
+What a wonderful world.

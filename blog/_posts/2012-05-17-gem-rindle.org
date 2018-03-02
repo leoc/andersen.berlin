@@ -1,0 +1,32 @@
+---
+title: "Gem: Rindle ... finally"
+layout: post
+tags:
+  - development
+  - kindle
+  - ruby
+  - gem
+---
+
+Last year I began developing a simple gem for managing the Kindles
+collection data. Somehow I lost track of it over the past months.
+As I got some new eBooks for my Kindle I reminded myself of that small
+project and made it usable again.
+
+Check it out its [[http://leoc.github.com/rindle][Github Page]].
+
+Here is a basic example:
+
+#+begin_src ruby
+require 'rindle'
+
+Rindle.load '/path/to/kindle/mount/'
+
+# Then just access collections and documents via their object representation
+coll = Rindle::Collection.find_by_name 'my collection'
+doc = Rindle::Document.find_by_name 'A book.pdf'
+coll.add doc
+coll.rename! 'a collection'
+
+Rindle.save!
+#+end_src

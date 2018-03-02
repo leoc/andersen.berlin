@@ -1,0 +1,42 @@
+---
+title: RSpec and Autotest for Non-Rails Development
+layout: post
+tags:
+  - development
+  - tdd
+  - rspec
+---
+
+I recently started a little new project. But since I were very spoiled
+by all the glitter of rails development, I struggled some time setting
+up rspec and autotest for my new project.
+And ... Mea Culpa! It really is that simple.
+
+Simply create a ~spec/spec_helper.rb~ file, to require rspec and the
+libs that you want to test. Maybe it's gonna be a gem, so you have to
+adjust the load path.
+
+#+begin_src ruby
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+
+require 'rubygems'
+require 'rspec'
+
+require 'my_lib'
+
+Rspec.configure do |config|
+  # give me something to do!
+end
+#+end_src
+
+And configure autotest to discover RSpec2 in ~autotest/discover.rb~
+
+#+begin_src ruby
+Autotest.add_discovery { "rspec2" }
+#+end_src
+
+That's it. Just run ~autotest~ in the root of you project.
+
+I added some more like rspec parameters in ~.rspec~ and the
+~autotest/fs-event~ inside of the ~.autotest~ file.

@@ -1,0 +1,16 @@
+---
+title: "Gem: KindleFS"
+layout: post
+tags:
+  - development
+  - kindle
+  - ruby
+  - gem
+---
+
+After I had a functioning version of Rindle finished, I began working
+on a FUSE Kindle Management FS. You can mount the Kindles Collection
+data into you filesystem and move files from collection to collection,
+rename them or delete them.
+
+Check it out its [[http://leoc.github.com/kindlefs][Github Page]].

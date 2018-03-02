@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="header">
+    <div class="wrap">
+      <div class="text">
+	<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d — %Y" }}</time>
+      </div>
+    </div>
+  </div>
+  <header>
+    <h2><a href="{{page.url}}">{{ page.title }}</a></h2>
+    <div class="meta">
+      <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> —</span>
+      <span class="tags">
+	{% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}
+      </span>
+    </div>
+  </header>
+  <div itemprop="articleBody">
+    {{content | indent_headings: 3}}
+  </div>
+</article>

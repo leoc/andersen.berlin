@@ -1,0 +1,14 @@
+---
+title: "Gem: EM::FS"
+layout: post
+tags:
+  - ruby
+  - eventmachine
+  - development
+  - gem
+---
+
+Lately I needed to access the filesystem in a non-blocking way with
+eventmachine. So I wrote a gem to easily do this.
+
+Check it out its [[http://leoc.github.com/em-fs][Github Page]].

@@ -1,0 +1,21 @@
+---
+layout: post
+tags:
+  - til
+---
+
+I am using org-protocol and capture things from within my browser and
+from my window manager (awesomewm). Some templates are generic ~TODO~
+headings and need to be refiled to the correct location.
+
+This simple script refiles certain templates (e.g. "a" and "c") when
+finalizing the capturing process.
+
+#+BEGIN_SRC elisp
+  (defun leoc/refile-maybe ()
+    (let ((key (org-capture-get :key)))
+      (when (member key '("a" "c"))
+	(org-refile))))
+
+  (add-hook 'org-capture-before-finalize-hook 'leoc/refile-maybe)
+#+END_SRC

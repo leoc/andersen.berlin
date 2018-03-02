@@ -1,0 +1,14 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/15811578-built-to-sell
+title: 'Built to Sell: Creating a Business That Can Thrive Without You'
+tags: []
+rating: 5
+with_note: false
+book_author: John Warrillow
+---
+
+
+
+
+

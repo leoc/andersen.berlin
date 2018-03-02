@@ -1,0 +1,23 @@
+---
+title: Switching To GitAuth
+layout: post
+tags:
+  - admin
+  - git
+---
+
+After some struggling with Gitosis I decided to go with GitAuth to
+administrate my private git repositories. Not only it is superior
+because it is written in Ruby. No, it provides a simple commandline
+interface to handle all the users, groups, repositories and
+permissions. I also appreciate the data stored in yml files for easy
+access from whatever software you may write in the future.
+
+It was written by Brown Beagle Software. There is an easy guide at
+[[http://github.com/brownbeagle/gitauth][GitHub]].
+
+I went the `git clone` way and had the setup running in five minutes.
+Since I use Debian with Ruby Enterprise Edition I had to fix some
+issues that occured to me when ever I tried to access the created
+repositories. I don't know whether it works for your out of the box or
+not.

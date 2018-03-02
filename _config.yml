@@ -1,0 +1,20 @@
+title: andersen.berlin
+email: arthur@andersen.berlin
+description: >-
+  Superstuff
+baseurl: ""
+url: ""
+permalink: pretty
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+assets:
+  digest: true

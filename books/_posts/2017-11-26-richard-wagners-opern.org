@@ -1,0 +1,16 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/30102411-richard-wagners-opern
+title: 'Richard Wagners Opern: Ein musikalischer Werkführer'
+tags:
+- non-fiction
+- musik
+rating: 0
+with_note: false
+book_author: Sven Friedrich
+---
+
+
+
+
+

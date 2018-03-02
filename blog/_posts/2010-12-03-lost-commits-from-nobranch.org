@@ -1,0 +1,22 @@
+---
+title: Git - Lost Commits From No Branch
+layout: post
+tags:
+  - git
+---
+I did a mistake when working on submodule clone instead of a manual
+cloned repository.
+
+That means as I checked out the master branch, my commits from the
+previous 'no-branch' state where reverted. To save them just do it
+like that:
+
+#+begin_src sh
+cd cloned-repo
+git reflog
+git checkout master
+git cherry-pick sha_of_the_missing_commit
+#+end_src
+
+Note to myself: Always check out the master branch before modifying
+submodule clones.

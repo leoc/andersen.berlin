@@ -1,0 +1,48 @@
+---
+title: My Tiny DNS Helper
+layout: post
+tags:
+  - admin
+  - tinydns
+---
+Until now I used that nice feature offered by hosteurope to use an
+auto-dns service, but somehow I'm missing the freedom right now so I
+had to setup a DNS server.
+
+I decided to use TinyDNS and djbDNS. A neat alternative to BIND & Co.
+
+#+begin_src sh
+sudo apt-get install djbdns
+#+end_src
+
+Afterwards we need to create some users and to configure the tinydns
+with our ip address.
+
+#+begin_src sh
+adduser --no-create-home --disabled-password --force-badname Gtinydns
+adduser --no-create-home --disabled-password --force-badname Gaxfrdns
+adduser --no-create-home --disabled-password --force-badname Gdnslog
+
+sudo axfrdns-conf Gaxfrdns Gdnslog  /etc/axfrdns /etc/tinydns 83.169.43.97
+sudo tinydns-conf Gtinydns Gdnslog /etc/tinydns 83.169.43.97
+#+end_src
+
+Now we are going to put tinydns into our service directory to start it.
+
+#+begin_src sh
+ln -s /etc/tinydns /etc/service/tinydns
+ln -s /etc/axfrdns /etc/service/axfrdns
+sleep 5
+svstat /etc/service/tinydns
+svstat /etc/service/axfrdns
+#+end_src
+
+And there you are. To customize the configuration you can switch to
+the ~/etc/tinydns/root~ directory and use the scripts inside. But remember
+to run ~make~ afterwards so that tinydns-data gets the changes.
+
+If your secondary nameserver does not pull changes automatically you
+will need a [little helper script](/downloads/dnsnotify) that notifies
+the nameserver to initiate a zone transfer.
+I added that script to my ~/etc/tinydns/root/Makefile~ to run it
+automatically when I compile the new tinydns data.

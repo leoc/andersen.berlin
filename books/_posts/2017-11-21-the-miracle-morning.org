@@ -1,0 +1,15 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/28243439-the-miracle-morning
+title: 'The Miracle Morning: The 6 Habits That Will Transform Your Life Before 8AM'
+tags:
+- soft-skills
+rating: 3
+with_note: false
+book_author: Hal Elrod
+---
+
+
+
+
+

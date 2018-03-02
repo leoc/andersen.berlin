@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="header">
+    <div class="wrap">
+      <div class="text">
+        {% if page.rating %}<span class="stars" data-rating="{{ page.rating }}"></span>{% endif %}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">Finished {{ page.date | date: "%b %-d — %Y" }}</time>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <h2><a href="{{page.url}}">{{ page.title }}</a></h2>
+    <div class="meta">
+      {% if page.rating %}<span class="stars" data-rating="{{ page.rating }}"></span>{% endif %}
+      <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">Finished {{ page.date | date: "%b %-d, %Y" }}</time> —</span>
+      <span class="author">by {{page.book_author}}</span>
+      {% if page.tags.size > 0 %}
+      <span class="tags">{% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
+      {% endif %}
+    </div>
+  </header>
+  <div itemprop="articleBody">
+    {{content | indent_headings: 3}}
+  </div>
+</article>

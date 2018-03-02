@@ -1,0 +1,12 @@
+---
+title: Ever Wondered What's The Steam?
+layout: post
+tags:
+  - rant
+  - java
+---
+I don't know. But I hate to work with Java for all that university stuff.
+
+#+CAPTION: Ever wondered what's the steam?
+#+ATTR_HTML: alt="Ever wondered what's the steam?" title="Java the Shit"
+[[../../../../../img/java_the_shit.png]]

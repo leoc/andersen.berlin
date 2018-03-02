@@ -1,0 +1,15 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/36131257-ego-is-the-enemy
+title: 'Ego is the Enemy: The Fight to Master Our Greatest Opponent'
+tags:
+- soft-skills
+rating: 4
+with_note: false
+book_author: Ryan Holiday
+---
+
+
+
+
+

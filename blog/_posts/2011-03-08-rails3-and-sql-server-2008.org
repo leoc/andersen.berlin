@@ -1,0 +1,85 @@
+---
+title: Rails 3 and SqlServer 2008
+layout: post
+tags:
+  - sqlserver
+  - rails
+  - ruby
+  - freetds
+---
+
+For the next project at work I have to interface Microsoft SqlServer
+2008 from my rails applications. The setup is quite simple. First we
+need unixODBC. Normally Mac OS X ships with iODBC, but since I use
+linux servers, I wanted to use the layer that's going to be used on my
+production systems aswell.
+
+Lets start!
+
+#+begin_src sh
+brew install unixodbc
+#+end_src
+
+Next, we need FreeTDS, which is a free implementation of the Tabular
+Data Stream protocol.
+
+#+begin_src sh
+brew edit freetds
+#+end_src
+
+Add ~--with-unixodbc=/usr/local~ to the ~./configure~ line. Then:
+
+#+begin_src sh
+brew install freetds
+#+end_src
+
+Then I created ~~/.freetds.conf~ and added:
+
+#+begin_src conf
+[development_db]
+host = <Database IP>
+port = 1433
+tds version = 8.0
+client charset = UTF-8
+#+end_src
+
+Edited ~/usr/local/etc/odbcinst.ini~ and added:
+
+#+begin_src conf
+[FreeTDS]
+Description = TD Driver (MSSQL)
+Driver = /usr/local/lib/libtdsodbc.so
+Setup = /usr/local/lib/libtdsodbc.so
+FileUsage = 1
+#+end_src
+
+And ~~/.odbc.ini~
+
+#+begin_src conf
+[development_db]
+Driver= /usr/local/lib/libtdsodbc.so
+Servername=development_db
+Server=<Database IP>
+Port=1433
+Database=<database>
+TDS_Version=8.0
+#+end_src
+
+To use the odbc connection, I just needed to install two ruby gems.
+Just add the following to your ~Gemfile~.
+
+#+begin_src ruby
+gem "activerecord-sqlserver-adapter"
+gem "ruby-odbc"
+#+end_src
+
+I ran ~bundle install~ and configured my ~config/database.yml~
+
+#+begin_src yaml
+adapter: sqlserver
+mode: odbc
+username: <login>
+password: <password>
+database: <database>
+dsn:  development_db
+#+end_src

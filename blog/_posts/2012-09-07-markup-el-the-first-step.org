@@ -1,0 +1,48 @@
+---
+title: Markup.el - The First Step
+layout: post
+tags:
+  - emacs
+  - markup
+---
+
+I had some time yesterday and decided to port the
+[[https://github.com/arielnetworks/cl-markup][cl-markup]] package to emacs lisp.
+
+What I came up with I called `markup.el`.
+
+You can check out the [[https://github.com/leoc/markup.el][code on GitHub]].
+Now you can easily generate HTML or XML from emacs lisp.
+
+The easiest thing you can do is generate simple tags.
+
+#+begin_src elisp
+(markup (:p "This is a simple example")) ;; => "<p>This is a simple example</p>"
+#+end_src
+
+But you can easily create a full html5 document aswell:
+
+#+begin_src elisp
+(markup-html5
+  (:div :style "border: 1px solid #000"
+     "Some content of the div!"))
+;; => "<!DOCTYPE html><html><div style=\"border: 1px solid #000\">Some content of the div!</div></html>"
+#+end_src
+
+You can even mix in some other expressions or variables:
+
+#+begin_src elisp
+(let ((maximum 5))
+  (markup-html5
+   (:body
+    (:ul
+     (loop for x from 1 to maximum
+           collect
+           (markup (:li  x " / " maximum)))))))
+;; => "<!DOCTYPE html><html><body><ul><li>1 / 5</li><li>2 / 5</li><li>3 / 5</li><li>4 / 5</li><li>5 / 5</li></ul></body></html>"
+#+end_src
+
+This is my first step towards an emacs lisp static website generator.
+The next step will be to extract the meta information from org files
+and integrate their content into layouts that have been described in
+markup.el compatible files.
