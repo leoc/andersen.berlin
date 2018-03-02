@@ -1,23 +1,29 @@
 ---
 layout: default
 ---
-<div id="content">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <h1 itemprop="name headline"><a href="{{page.url}}">{{ page.title }}</a></h1>
-    </header>
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="header">
+    <div class="wrap">
+      <div class="text">
+        {% if page.rating %}<span class="stars" data-rating="{{ page.rating }}"></span>{% endif %}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">Finished {{ page.date | date: "%b %-d — %Y" }}</time>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <h2><a href="{{page.url}}">{{ page.title }}</a></h2>
     <div class="meta">
-	<span class="date"><time datetime="{{ page.date | date_to_xmlschema }}">Finished {{ page.date | date: "%b %-d, %Y" }}</time></span>
-	{% if page.tags.size != 0 %}—{% endif %}
-	<span class="tag">{{page.tags | join: ", "}}</span>
-	{% if page.rating %}
-	—
-	<span class="stars" data-rating="{{ page.rating }}"></span>
-	{% endif %}
-	— <a href="{{ page.link }}" target="_blank">Via Goodreads</a>
+      {% if page.rating %}<span class="stars" data-rating="{{ page.rating }}"></span>{% endif %}
+      <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">Finished {{ page.date | date: "%b %-d, %Y" }}</time> —</span>
+      <span class="author">by {{page.book_author}}</span>
+      {% if page.tags.size > 0 %}
+      <span class="tags">{% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}</span>
+      {% endif %}
     </div>
-    <div class="content" itemprop="articleBody">
-      {{ content }}
-    </div>
-  </article>
-</div>
+  </header>
+  <div itemprop="articleBody">
+    {{content | indent_headings: 3}}
+  </div>
+</article>

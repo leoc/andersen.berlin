@@ -5,4 +5,9 @@ title: 'Algorithms to Live By: The Computer Science of Human Decisions'
 tags: []
 rating: 3
 with_note: false
+book_author: Brian Christian
 ---
+
+
+
+

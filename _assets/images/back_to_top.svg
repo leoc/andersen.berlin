@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="13px" viewBox="0 0 23 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="BLOGLIST" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-644.000000, -2453.000000)">
+        <g id="up-arrow" transform="translate(645.000000, 2454.000000)" fill="#2D2D2D" stroke="#2D2D2D">
+            <path d="M20.199,10.964 C19.996,10.964 19.789,10.886 19.633,10.73 L10.602,1.695 L1.566,10.73 C1.254,11.042 0.746,11.042 0.434,10.73 C0.121,10.417 0.121,9.913 0.434,9.601 L9.633,0.402 C10.164,-0.134 11.035,-0.134 11.566,0.402 L20.766,9.601 C21.078,9.913 21.078,10.417 20.766,10.73 C20.609,10.886 20.406,10.964 20.199,10.964 Z" id="Fill-5"></path>
+        </g>
+    </g>
+</svg>

@@ -7,4 +7,9 @@ tags:
 - non-fiction
 rating: 5
 with_note: false
+book_author: Josh Waitzkin
 ---
+
+
+
+

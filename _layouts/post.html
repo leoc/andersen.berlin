@@ -1,18 +1,24 @@
 ---
 layout: default
 ---
-<div id="content">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <h1 itemprop="name headline"><a href="{{page.url}}">{{ page.title }}</a></h1>
-    </header>
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="header">
+    <div class="wrap">
+      <div class="text">
+	<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d — %Y" }}</time>
+      </div>
+    </div>
+  </div>
+  <header>
+    <h2><a href="{{page.url}}">{{ page.title }}</a></h2>
     <div class="meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      —
-      <span class="tags">{{ page.tags | join: ", "}}</span>
+      <span class="date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> —</span>
+      <span class="tags">
+	{% for tag in page.tags %}<span>{{tag}}</span>{% endfor %}
+      </span>
     </div>
-    <div class="content" itemprop="articleBody">
-      {{ content }}
-    </div>
-  </article>
-</div>
+  </header>
+  <div itemprop="articleBody">
+    {{content | indent_headings: 3}}
+  </div>
+</article>

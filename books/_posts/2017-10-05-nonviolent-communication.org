@@ -7,4 +7,8 @@ tags:
 - soft-skills
 rating: 5
 with_note: false
+book_author: Marshall B. Rosenberg
 ---
+
+
+

@@ -6,4 +6,9 @@ title: Der Finanzwesir - Was Sie über Vermogensaufbau wirklich wissen müssen. 
 tags: []
 rating: 4
 with_note: false
+book_author: Albert Warnecke
 ---
+
+
+
+

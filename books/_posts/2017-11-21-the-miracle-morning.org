@@ -6,4 +6,10 @@ tags:
 - soft-skills
 rating: 3
 with_note: false
+book_author: Hal Elrod
 ---
+
+
+
+
+

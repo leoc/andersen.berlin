@@ -5,4 +5,9 @@ title: 'Deep Work: Rules for Focused Success in a Distracted World'
 tags: []
 rating: 5
 with_note: false
+book_author: Cal Newport
 ---
+
+
+
+

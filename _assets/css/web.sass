@@ -1,0 +1,427 @@
+---
+---
+$media-tablet-wide: 1024px
+$media-gt-tablet-wide: unquote("(min-width: #{$media-tablet-wide + 1})")
+$media-gte-tablet-wide: unquote("(min-width: #{$media-tablet-wide})")
+$media-lte-tablet-wide: unquote("(max-width: #{$media-tablet-wide})")
+$media-lt-tablet-wide: unquote("(max-width: #{$media-tablet-wide - 1})")
+
+$media-tablet-narrow: 768px
+$media-gt-tablet-narrow: unquote("(min-width: #{$media-tablet-narrow + 1})")
+$media-gte-tablet-narrow: unquote("(min-width: #{$media-tablet-narrow})")
+$media-lte-tablet-narrow: unquote("(max-width: #{$media-tablet-narrow})")
+$media-lt-tablet-narrow: unquote("(max-width: #{$media-tablet-narrow - 1})")
+
+$media-mobile-wide: 640px
+$media-gt-mobile-wide: unquote("(min-width: #{$media-mobile-wide + 1})")
+$media-gte-mobile-wide: unquote("(min-width: #{$media-mobile-wide})")
+$media-lte-mobile-wide: unquote("(max-width: #{$media-mobile-wide})")
+$media-lt-mobile-wide: unquote("(max-width: #{$media-mobile-wide - 1})")
+
+$media-mobile-narrow: 420px
+$media-gt-mobile-narrow: unquote("(min-width: #{$media-mobile-narrow + 1})")
+$media-gte-mobile-narrow: unquote("(min-width: #{$media-mobile-narrow})")
+$media-lte-mobile-narrow: unquote("(max-width: #{$media-mobile-narrow})")
+$media-lt-mobile-narrow: unquote("(max-width: #{$media-mobile-narrow - 1})")
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900')
+
+*
+  box-sizing: border-box
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+body
+  line-height: 1
+ol, ul
+  list-style: none
+blockquote, q
+  quotes: none
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+
+.stars[data-rating='0']
+  &:after
+    content: "★★★★★"
+    color: #bcbcbc
+.stars[data-rating='1']
+  &:before
+    content: "★"
+  &:after
+    content: "★★★★"
+    color: #bcbcbc
+.stars[data-rating='2']
+  &:before
+    content: "★★"
+  &:after
+    content: "★★★"
+    color: #bcbcbc
+.stars[data-rating='3']
+  &:before
+    content: "★★★"
+  &:after
+    content: "★★"
+    color: #bcbcbc
+.stars[data-rating='4']
+  &:before
+    content: "★★★★"
+  &:after
+    content: "★"
+    color: #bcbcbc
+.stars[data-rating='5']
+  &:before
+    content: "★★★★★"
+
+clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+a
+  color: #0080ee
+  text-decoration: none
+
+a[href*="//"]:after
+  content: '↪'
+  margin-left: 4px
+
+body
+  font-family: 'Lato', sans-serif
+  color: #2d2d2d
+  line-height: 20px
+  font-size: 16px
+
+.container
+  margin: 100px 167px
+
+  @media #{$media-lte-tablet-wide}
+    margin: 64px 96px
+
+  @media #{$media-lte-tablet-narrow}
+    margin: 48px 64px
+
+  @media #{$media-lte-mobile-narrow}
+    margin: 39px 15px
+
+header
+  h1
+    font-size: 48px
+    font-weight: 900
+    text-transform: uppercase
+    letter-spacing: 1.2px
+    line-height: normal
+
+    @media #{$media-lte-mobile-narrow}
+      font-size: 30px
+
+  nav
+    @extend clearfix
+    margin: 54px 0 0 0
+
+    @media #{$media-lte-mobile-narrow}
+      margin: 32px 0 0 0
+
+    ul li
+      position: relative
+      float: left
+      display: inline-block
+      height: 42px
+
+      + li
+        margin-left: 54px
+        @media #{$media-lte-mobile-wide}
+          margin-left: 22px
+
+      a
+        display: inline-block
+        font-size: 21px
+        font-weight: 300
+        color: #000000
+
+        @media #{$media-lte-mobile-narrow}
+          font-size: 14px
+
+      &.active
+        a
+          margin-top: 21px
+          color: #2d2d2d
+          font-weight: bold
+
+        &:after
+          content: ' '
+          position: absolute
+          top: 40%
+          left: 0
+          height: 3px
+          width: 100%
+          background-color: #2d2d2d
+
+header, footer
+  max-width: 978px
+
+main
+  margin-top: 128px
+  @media #{$media-lte-mobile-narrow}
+    margin-top: 32px
+
+footer
+  padding: 128px 0 0 0
+
+  hr
+    border: none
+    background-color: #2d2d2d
+    height: 3px
+    margin-bottom: 26px
+
+  .info
+    margin-bottom: 39px
+    text-align: right
+    color: #808080
+    @media #{$media-lte-mobile-narrow}
+      font-size: 12px
+
+  a
+    font-size: 16px
+    font-weight: bold
+    line-height: 1.25
+    color: #2d2d2d
+  a + a
+    margin-left: 24px
+
+  nav
+    position: relative
+    @extend clearfix
+    .center
+      margin-left: 0
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+    .left
+      float: left
+    .right
+      float: right
+
+  @media #{$media-lte-tablet-wide}
+    [href="/"], [href="/blog"]:not(.left), [href="/books"]:not(.left), [href="/contact"]
+      display: none
+
+ul.years > li, article
+  margin-bottom: 144px
+  position: relative
+
+  @media #{$media-lte-mobile-narrow}
+    margin-bottom: 64px
+    padding-top: 32px
+
+  .header
+    @media #{$media-lte-mobile-narrow}
+      .wrap .text
+        font-size: 24px
+        line-height: 48px
+        white-space: nowrap
+        font-weight: bold
+        margin-bottom: 24px
+
+    @media #{$media-gt-mobile-narrow}
+      position: absolute
+      top: 0
+      left: -167px
+      border-left: 3px solid #2d2d2d
+      height: 100%
+      width: 48px
+
+      @media #{$media-lte-tablet-wide}
+        left: -96px
+
+      @media #{$media-lte-tablet-narrow}
+        left: -64px
+        border-left: 2px solid #2d2d2d
+
+      .wrap
+        position: relative
+        width: 0px
+        transform: rotate(-90deg)
+        .text
+          position: absolute
+          right: 0
+          font-size: 24px
+          line-height: 48px
+          white-space: nowrap
+          @media #{$media-lte-tablet-narrow}
+            font-size: 18px
+            line-height: 36px
+          .stars
+            margin-right: 24px
+            @media #{$media-lte-tablet-narrow}
+              margin-right: 16px
+
+article .header
+  @media #{$media-lte-mobile-narrow}
+    display: none
+
+main article
+  h2
+    font-size: 32px
+    font-weight: 300
+    line-height: normal
+    max-width: 1024px
+    a
+      color: #000000
+    margin-bottom: 90px
+
+    @media #{$media-lte-mobile-narrow}
+      font-size: 24px
+      margin-bottom: 32px
+
+  h3
+    font-size: 21px
+    font-weight: bold
+    line-height: normal
+    margin: 64px 0 12px 0
+
+    @media #{$media-lte-mobile-narrow}
+      font-size: 16px
+      margin: 24px 0 8px 0
+
+  h4
+    font-size: 20px
+    font-weight: bold
+    line-height: normal
+    margin: 32px 0 12px 0
+
+    @media #{$media-lte-mobile-narrow}
+      font-size: 14px
+      margin: 16px 0 8px 0
+
+  h2, h3, h4, h5, h6
+    & + p
+      margin-top: 12px
+
+  p
+    font-size: 16px
+    line-height: 24px
+    max-width: 512px
+
+    @media #{$media-lte-mobile-narrow}
+      font-size: 12px
+      line-height: 18px
+      max-width: auto
+
+  p + p, p + div, div + p
+    margin-top: 24px
+
+    @media #{$media-lte-mobile-narrow}
+      margin-top: 18px
+
+  div.highlight
+    max-width: 978px
+    overflow-x: auto
+
+    @media #{$media-lte-mobile-narrow}
+      margin-left: -15px
+      margin-right: -15px
+
+  pre
+    max-width: 978px
+    overflow-x: auto
+    padding: 24px
+    font-family: mono-space
+    font-size: 14px
+    line-height: 1.33
+    letter-spacing: normal
+    @media #{$media-lte-mobile-narrow}
+      font-size: 10px
+      padding: 12px
+
+  pre.example
+    background-color: #e5e5e5
+    @media #{$media-lte-mobile-narrow}
+      margin-left: -15px
+      margin-right: -15px
+
+  code
+    display: inline-block
+    font-family: Menlo, mono-space
+    font-size: 14px
+    line-height: 24px
+    padding: 0 5px
+    background-color: #e5e5e5
+    @media #{$media-lte-mobile-narrow}
+      font-size: 10px
+
+  iframe
+    width: 100%
+
+ul.books .book .title, ul.posts .post .title, article header h2
+  font-size: 32px
+  font-weight: 300
+  line-height: normal
+  max-width: 1024px
+  margin-bottom: 0
+
+  @media #{$media-lte-mobile-narrow}
+    font-size: 24px
+
+  a
+    color: #000000
+
+ul.books .book .meta, ul.posts .post .meta, article header .meta
+  margin-top: 7px
+  font-family: Lato
+  font-size: 16px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: 20px
+  letter-spacing: normal
+
+  @media #{$media-lte-mobile-narrow}
+    font-size: 12px
+    margin-top: 0
+
+  .tags
+    span + span
+      margin-left: 10px
+    span:before
+      content: '#'
+  .stars
+    margin-right: 34px
+
+    @media #{$media-lte-mobile-narrow}
+      font-size: 16px
+      margin: 0
+      display: block
+
+article header .meta
+  @media #{$media-gt-mobile-narrow}
+    .date, .stars
+      display: none
+    .tags:before
+      content: '—'
+
+  @media #{$media-lte-mobile-narrow}
+    .tags
+      display: block
+
+article header
+  margin-bottom: 51px
+
+ul.posts, ul.books
+  li + li
+    margin-top: 64px
+    @media #{$media-lte-mobile-narrow}
+      margin-top: 48px

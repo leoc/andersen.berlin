@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div id="content">
+  <ul class="years">
+    {% assign date = '' %}
+    {% assign first_year = true %}
+    {% for book in site.categories.books %}
+    {% assign current_date = book.date | date: "%Y" %}
+    {% if current_date != date %}
+    {% unless first_year %}
+      </ul>
+    </li>
+    {% endunless %}
+    <li id="y{{current_date}}">
+      <div class="header">
+        <div class="wrap">
+          <div class="text">
+            {{ current_date }}
+          </div>
+        </div>
+      </div>
+      <ul class="books">
+        {% assign first_year = false %}
+    {% assign date = current_date %} 
+    {% endif %}
+          <li class="book">
+            <div class="title"><a href="{{site.baseurl}}{{book.url}}">{{book.title}}</a></div>
+            <div class="meta">
+              {% if book.rating %}<span class="stars" data-rating="{{ book.rating }}"></span>{% endif %}
+              <span class="date"><time datetime="{{ book.date | date_to_xmlschema }}" itemprop="datePublished">Finished {{ book.date | date: "%b %-d, %Y" }}</time></span> —
+	      <span class="author">by {{book.book_author}}</span>
+	      {% if book.tags.size > 0 %}
+	      — <span class="tags">{% for tag in book.tags %}<span>{{tag}}</span>{% endfor %}</span>
+	      {% endif %}
+            </div>
+          </li>
+    {% endfor %}
+  </ul>
+</div>

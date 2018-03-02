@@ -5,4 +5,9 @@ title: 'Niccolò Machiavelli: Hauptwerke: Vom Staate, Der Fürst, Kleine Schrift
 tags: []
 rating: 4
 with_note: false
+book_author: Niccolò Machiavelli
 ---
+
+
+
+

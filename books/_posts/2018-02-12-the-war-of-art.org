@@ -1,0 +1,14 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/14653803-the-war-of-art
+title: 'The War of Art: Break Through the Blocks and Win Your Inner Creative Battles'
+tags: []
+rating: 5
+with_note: false
+book_author: Steven Pressfield
+---
+
+* Summary
+* Was it an easy read?
+* Which chapter did I like most?
+* Would I buy it for a friend?

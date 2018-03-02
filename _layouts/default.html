@@ -3,16 +3,38 @@
   {% include head.html %}
   <body>
     <div class="container">
-      <nav id="main">
-        {% include header.html %}
-	<ul>
-	  <li><a href="/">Home</a></li>
-	  <li><a href="/blog">Blog</a></li>
-	  <li><a href="/reading">Reading</a></li>
-	  <li><a href="/about">About</a></li>
-	</ul>
-      </nav>
-      {{ content }}
+      <header>
+        <h1>Arthur Andersen</h1>
+        <nav>
+	  <ul>
+            <li class="{% if page.url == "/" %}active{% endif %}"><a href="/">Home</a></li>
+            <li class="{% if page.url contains "/blog" %}active{% endif %}"><a href="/blog">Blog</a></li>
+            <li class="{% if page.url contains "/books" %}active{% endif %}"><a href="/books">Books</a></li>
+            <li class="{% if page.url contains "/contact/"%}active{% endif %}"><a href="/contact">Contact</a></li>
+	  </ul>
+        </nav>
+      </header>
+      <main>
+        {{ content }}
+      </main>
+      {% if page.page_footer != false %}
+      <footer>
+        <div class="info">Don't hesitate to contact me for feedback!</div>
+        <hr>
+        <nav>
+	  {% if page.url != "/blog/" and page.url contains "/blog/" %}<a href="/blog" class="left">Back to blog posts</a>{% endif %}
+	  {% if page.url != "/books/" and page.url contains "/books/" %} <a href="/books" class="left">Back to book list</a>{% endif %}
+  	  <a href="#" class="center">{% asset back_to_top.svg %}</a>
+	  <div class="right">
+  	    <a href="/">Hello</a>
+  	    <a href="/blog">Blog</a>
+  	    <a href="/books">Books</a>
+  	    <a href="/contact">Contact</a>
+  	    <a href="/privacy">Privacy</a>
+	  </div>
+        </nav>
+      </footer>
+      {% endif %}
     </div>
   </body>
 </html>
