@@ -11,6 +11,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.7.0"
 gem "org-ruby"
 gem "pygments.rb"
+gem "html-proofer"
 
 gem "activesupport"
 gem "awesome_print"
