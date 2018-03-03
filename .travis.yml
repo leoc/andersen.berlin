@@ -7,7 +7,7 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 install:
   - bundle install
-  - pip install awscli
+  - pip install --user awscli
 script: ruby grab_goodreads.rb && jekyll build
 branches:
   only:
