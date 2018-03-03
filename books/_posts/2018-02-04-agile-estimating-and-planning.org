@@ -1,6 +1,8 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/9267.Agile_Estimating_and_Planning
+full_title: Agile Estimating and Planning
+short_title: Agile Estimating and Planning
 title: Agile Estimating and Planning
 tags:
 - soft-skills
@@ -9,6 +11,12 @@ rating: 4
 with_note: false
 book_author: Mike Cohn
 ---
+
+
+
+
+
+
 
 
 

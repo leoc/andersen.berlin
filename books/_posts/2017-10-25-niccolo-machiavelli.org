@@ -1,12 +1,20 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/25866930-niccol-machiavelli
-title: 'Niccolò Machiavelli: Hauptwerke: Vom Staate, Der Fürst, Kleine Schriften'
+full_title: 'Niccolò Machiavelli: Hauptwerke: Vom Staate, Der Fürst, Kleine Schriften'
+short_title: 'Niccolò Machiavelli: Hauptwerke'
+title: 'Niccolò Machiavelli: Hauptwerke'
 tags: []
 rating: 4
 with_note: false
 book_author: Niccolò Machiavelli
 ---
+
+
+
+
+
+
 
 
 

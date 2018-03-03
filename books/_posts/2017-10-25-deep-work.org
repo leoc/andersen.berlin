@@ -1,12 +1,20 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/28383248-deep-work
-title: 'Deep Work: Rules for Focused Success in a Distracted World'
+full_title: 'Deep Work: Rules for Focused Success in a Distracted World'
+short_title: Deep Work
+title: Deep Work
 tags: []
 rating: 5
 with_note: false
 book_author: Cal Newport
 ---
+
+
+
+
+
+
 
 
 

@@ -1,14 +1,21 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/25073935-nonviolent-communication
-title: 'Nonviolent Communication: A Language of Life, 3rd Edition: Life-Changing Tools
-  for Healthy Relationships'
+full_title: 'Nonviolent Communication: A Language of Life'
+short_title: Nonviolent Communication
+title: Nonviolent Communication
 tags:
 - soft-skills
 rating: 5
 with_note: false
 book_author: Marshall B. Rosenberg
 ---
+
+
+
+
+
+
 
 
 

@@ -1,15 +1,23 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/549384.The_Intellectual_Life
-title: 'The Intellectual Life: Its Spirit, Conditions, Methods'
+full_title: 'The Intellectual Life: Its Spirit, Conditions, Methods'
+short_title: The Intellectual Life
+title: The Intellectual Life
 tags:
-- non-fiction
 - soft-skills
+- non-fiction
 - philosophy
 rating: 5
 with_note: false
 book_author: Antonin Sertillanges
 ---
+
+
+
+
+
+
 
 
 

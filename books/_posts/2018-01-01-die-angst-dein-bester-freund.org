@@ -1,6 +1,8 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/26882131-die-angst-dein-bester-freund
+full_title: Die Angst, dein bester Freund
+short_title: Die Angst, dein bester Freund
 title: Die Angst, dein bester Freund
 tags:
 - non-fiction
@@ -8,6 +10,12 @@ rating: 3
 with_note: false
 book_author: Alexander Huber
 ---
+
+
+
+
+
+
 
 
 

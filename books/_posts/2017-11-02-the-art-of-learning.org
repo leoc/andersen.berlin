@@ -1,7 +1,9 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/3381336-the-art-of-learning
-title: 'The Art of Learning: An Inner Journey to Optimal Performance'
+full_title: 'The Art of Learning: An Inner Journey to Optimal Performance'
+short_title: The Art of Learning
+title: The Art of Learning
 tags:
 - soft-skills
 - non-fiction
@@ -9,6 +11,12 @@ rating: 5
 with_note: false
 book_author: Josh Waitzkin
 ---
+
+
+
+
+
+
 
 
 

@@ -1,12 +1,21 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/14653803-the-war-of-art
-title: 'The War of Art: Break Through the Blocks and Win Your Inner Creative Battles'
+full_title: 'The War of Art: Break Through the Blocks and Win Your Inner Creative
+  Battles'
+short_title: The War of Art
+title: The War of Art
 tags: []
 rating: 5
 with_note: false
 book_author: Steven Pressfield
 ---
+
+
+
+
+
+
 
 * Summary
 * Was it an easy read?

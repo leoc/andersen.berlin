@@ -1,12 +1,20 @@
 ---
 layout: reading
 link: https://www.goodreads.com/book/show/18774981-waking-up
-title: 'Waking Up: A Guide to Spirituality Without Religion'
+full_title: 'Waking Up: A Guide to Spirituality Without Religion'
+short_title: Waking Up
+title: Waking Up
 tags: []
 rating: 0
 with_note: false
 book_author: Sam Harris
 ---
+
+
+
+
+
+
 
 
 
