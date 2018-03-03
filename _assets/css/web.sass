@@ -413,8 +413,9 @@ article header .meta
   @media #{$media-gt-mobile-narrow}
     .date, .stars
       display: none
-    .tags:before
-      content: '—'
+    .author + .tags
+      &:before
+        content: ' — '
 
   @media #{$media-lte-mobile-narrow}
     .tags
