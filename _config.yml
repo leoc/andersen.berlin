@@ -3,7 +3,7 @@ email: arthur@andersen.berlin
 description: >-
   Superstuff
 baseurl: ""
-url: ""
+url: "https://www.andersen.berlin"
 permalink: pretty
 
 markdown: kramdown
