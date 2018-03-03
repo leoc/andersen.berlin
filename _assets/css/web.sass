@@ -24,6 +24,7 @@ $media-gte-mobile-narrow: unquote("(min-width: #{$media-mobile-narrow})")
 $media-lte-mobile-narrow: unquote("(max-width: #{$media-mobile-narrow})")
 $media-lt-mobile-narrow: unquote("(max-width: #{$media-mobile-narrow - 1})")
 
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700')
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900')
 
 *
@@ -330,18 +331,19 @@ main article
   div.highlight
     max-width: 978px
     overflow-x: auto
+    font-family: 'Cousine', monospace
 
     @media #{$media-lte-mobile-narrow}
       margin-left: -15px
       margin-right: -15px
 
   pre
+    font-family: 'Cousine', monospace
     background-color: #e5e5e5
     max-width: 978px
     overflow-x: auto
     padding: 24px
-    font-family: mono-space
-    font-size: 14px
+    font-size: 12px
     line-height: 1.33
     letter-spacing: normal
     @media #{$media-lte-mobile-narrow}
@@ -355,9 +357,9 @@ main article
       margin-right: -15px
 
   code
+    font-family: 'Cousine', monospace
     display: inline-block
-    font-family: Menlo, mono-space
-    font-size: 14px
+    font-size: 12px
     line-height: 24px
     padding: 0 5px
     background-color: #e5e5e5
