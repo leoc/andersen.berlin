@@ -3,10 +3,16 @@ layout: post
 tags:
   - til
 ---
-You can direct any element to be clickable through. This is especially
-useful if you want to put an overlay on top of something (absolutely
-positioned) and want to be the underlying layer to be clickable.
+I just found out that you can make a page element "unclickable".
+Meaning that any click on this element will be registered by the
+element below this respective element.
+
+This is especially useful if you want to put an overlay on top of
+something (absolutely positioned) and want to be the underlying layer
+to be clickable.
 
 #+BEGIN_SRC css
-pointer-events: none;
+.unclickable {
+  pointer-events: none;
+}
 #+END_SRC
