@@ -16,12 +16,12 @@ exclude: [vendor]
 sudo: false
 deploy:
   provider: s3
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $S3_BUCKET
   skip_cleanup: true
   local_dir: ./_site
-  region: eu-central-1
+  region: $AWS_DEFAULT_REGION
   cache_control: "max-age=21600"
   acl: public_read
 after_deploy:
