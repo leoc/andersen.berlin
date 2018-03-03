@@ -16,4 +16,5 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   bucket: $S3_BUCKET
-  local_dir: /home/travis/build/leoc/andersen.berlin/_site
+  skip_cleanup: true
+  local_dir: ./_site
