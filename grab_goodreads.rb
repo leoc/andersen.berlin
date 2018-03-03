@@ -1,4 +1,4 @@
-# coding: utf-8
+#!/usr/bin/env ruby
 require 'goodreads'
 require 'awesome_print'
 require 'active_support'
@@ -18,15 +18,29 @@ client = Goodreads::Client.new
 books = client.shelf(42730111, "read").books
 books.each do |element|
   book = element['book']
-  title = book['title'].gsub(/[\.:]\s.{7,}$/, '').parameterize
+
   date = DateTime.parse(element['read_at'] || element['date_added']).utc
-  filename = "books/_posts/#{date.strftime("%Y-%m-%d")}-#{title}.org"
+
+  full_title = book['title']
+
+  short_title = book['title']
+  short_title = short_title.split(':').tap { |c| c.length > 1 && c.pop }.join(':')
+  short_title = short_title.split(' - ').tap { |c| c.length > 1 && c.pop }.join(' - ')
+
+  filename_title = book['title'].gsub(/[\.:]\s.{7,}$/, '').parameterize
+  filename_date = date.strftime("%Y-%m-%d")
+  filename = "books/_posts/#{filename_date}-#{filename_title}.org"
+
   tags = Array[element['shelves']['shelf']].flatten.select { |s| s['name'] != 'read' }.map { |s| s['name'] }
+
   author = book['authors']['author']['name']
+
   header = YAML.dump(
     'layout' => 'reading',
     'link' => book['link'],
-    'title' => book['title'],
+    'full_title' => full_title,
+    'short_title' => short_title,
+    'title' => short_title,
     'tags' => tags,
     'rating' => element['rating'] && element['rating'].to_i,
     'with_note' => false,
