@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Manage Docker Images Disk Usage"
+tags:
+  - til
+  - docker
+---
+
+A while ago I was finding that ~ncdu /~ shows that docker is using a lot
+of disk space. I showed how to remove volumes in [[https://www.andersen.berlin/blog/2017/07/17/manage-docker-volume-disk-size/][Manage Docker Volume
+Disk Size]]. But volumes are not the only thing that can claim disk
+space.
+
+A usual suspect are images that are not used anymore. You can get a
+list of images that are not tagged anymore via:
+
+#+BEGIN_SRC shell
+docker images -q --filter "dangling=true"
+#+END_SRC
+
+To delete them all, hit:
+
+#+BEGIN_SRC shell
+docker rmi $(docker images -q --filter "dangling=true")
+#+END_SRC
