@@ -9,3 +9,167 @@ rating: 0
 with_note: false
 book_author: Michael Bungay Stanier
 ---
+
+The Coaching Habit was a surprise. I saw some comments about the book
+and recommended it to a friend who was trying to spark some motivation
+and insights in a younger friend who seems to have a lot of potential.
+
+He told me that the ideas are interesting, but it was not an easy
+read for him. I suppose it is because of the self-helpy feel to the
+book.
+
+I postponed reading the book a bit. But now I finished it and I really
+liked what the ideas it described.
+
+---
+
+I think it is a good accompanying read to [[/books/2017/10/05/nonviolent-communication/][Nonviolent Communication]] by
+Marshall B. Rosenberg.
+
+The author proposes seven questions that help the "interviewed" or
+"coached" person to explore the solutions by themselves.
+
+These questions should be incorporated into every-day life.
+
+#+BEGIN_QUOTE
+Coaching is a daily, informal act, not an occasional, formal "It's
+Coaching Time!" event.
+#+END_QUOTE
+
+* Habits
+
+To do that we need to fight our ingrained way of tackling problems
+among our friends, co-workers or employees.
+
+#+BEGIN_QUOTE
+[...] a Duke University says that at least 45 percent of our waking
+behaviour is habitual. Although we'd like to think we're in charge, it
+turns out that we're not so much controlling how we act with out
+conscious mind as we are being driven by out subconscious or
+unconscious mind.
+#+END_QUOTE
+
+For each of the "essential" coaching questions the mechanism of
+replacing a habit is explicitly layed out via a form to fill out.
+
+#+BEGIN_QUOTE
+To build an effective new habit, you need five essential components: a
+reason, a trigger, a micro-habit, effective practice, and a plan.
+#+END_QUOTE
+
+Making a plan:
+
+- "When this happens ..." :: Identify the trigger
+- "Instead of ..." :: Articulate the old unhelpful habit
+- "I will ..." :: Define the new reaction
+
+* Questions
+
+The basics:
+
+- Ask only one question at a time. Then listen!
+- Stick to questions with "What?" (avoid questions with "Why?")
+- Keep silence. At least three seconds after asking a question.
+- Acknowledge the answers you get (Say "Yes, that's good",
+  "Fantastic", "Megagut!")
+- Always ask: "And what else?"
+
+** "Whats on your mind?"
+
+Skip the small talk and come right into the conversation:
+
+- Coaching for performance :: addressing and solving a specific
+     problem or challenge
+- Coaching for development :: to move the focus from the issue to the
+     person dealing with the issue
+
+Deepen focus with 3P's (People, Projects, Patterns). The difficulty
+this person is working through has usually to do with a project,
+person or a pattern of behavior.
+
+Get an undestanding of the context in the mind of the person.
+
+#+BEGIN_QUOTE
+Whatever you are thinking about can also influence th choices you
+make, so you might not, in fact, make the optimal choice.
+#+END_QUOTE
+
+** "And what else?"
+
+Uncover and create new possibilities!
+
+And possibly buy yourself some time. Listen and you will unearth
+valuable options for you and your comrade.
+
+** "What's the real challenge here for you?"
+
+Identify the real problem through the person you are helping and let
+them take responsibility in fixing it themselves.
+
+Let them keep their integrity.
+
+** "What do you want?"
+
+#+BEGIN_QUOTE
+The illusion that both parties to the conversation know what the other
+party whants is pervasive, and it sets the stage for plenty of
+frustrating exchanges.
+#+END_QUOTE
+
+Increase engagement with this TERA question. Every person has needs
+and wants to stay in a state of "safety.". For that you need to be
+cautious of the TERA quotient:
+
+- Tribe :: "Are you with me, or are you against me?"
+- Expectation :: "Do I know the future or don't I?"
+- Rank :: "Are you more important or less important than me?"
+- Autonomy :: "Do I get a say or don't I?"
+
+**To be most effective stay calm and listen.**
+
+** "What do you think I could do?" / "What do you want from me?"
+
+Do not ask quickly. First deflect. Find out what the other person
+might know to do?
+
+Remember the triangle between **Victim**, **Persecutor** and
+**Rescuer**. Let other people keep their integrity by asking
+questions.
+
+** "If you are saying yes to this, what are you saying no to?"
+
+This is a question mostly for introspection.
+
+Say "yes" more slowly. Maybe it is wise to deflect and help the other
+people solving it on their own?
+
+*** TODO Listen to the Great Work Podcast with Bill Jensen
+
+** "What was most useful to you?"
+
+#+BEGIN_QUOTE
+Reflection is a form of practice.
+#+END_QUOTE
+
+Try to lean from what's been going on. Remind yourself of the
+questions and retrieve answers to future ones.
+
+* Summary
+
+The key take-away is to listen more and to shut-up with advice in the
+coaching process. Advice is counter-productive in almost any
+communication unless it is explicitly asked for. And even then it
+might pay off to try the coaching questions to lead the solution
+finding process of others.
+
+Inception may be a good comparison. Help others to find the power of
+autonomy and creativity within themselves via strategic questions.
+
+* Quotes
+
+
+* Thoughts
+
+- Every "yes" to someone else is a "no" to myself.
+- I am especially guilty of switching into advice-giving mode.
+-
