@@ -1,0 +1,18 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/25305911-the-art-of-the-start-2-0
+full_title: 'The Art of the Start 2.0: The Time-Tested, Battle-Hardened Guide for
+  Anyone Starting Anything'
+short_title: The Art of the Start 2.0
+title: The Art of the Start 2.0
+tags: []
+rating: 4
+with_note: false
+book_author: Guy Kawasaki
+---
+
+
+
+
+
+

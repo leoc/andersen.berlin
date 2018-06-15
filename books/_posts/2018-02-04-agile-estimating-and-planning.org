@@ -5,12 +5,13 @@ full_title: Agile Estimating and Planning
 short_title: Agile Estimating and Planning
 title: Agile Estimating and Planning
 tags:
-- soft-skills
 - computer-science
+- soft-skills
 rating: 4
 with_note: false
 book_author: Mike Cohn
 ---
+
 
 
 

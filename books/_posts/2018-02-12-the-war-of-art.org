@@ -17,6 +17,7 @@ book_author: Steven Pressfield
 
 
 
+
 * Summary
 * Was it an easy read?
 * Which chapter did I like most?

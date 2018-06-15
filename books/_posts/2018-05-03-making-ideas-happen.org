@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/7696135-making-ideas-happen
+full_title: 'Making Ideas Happen: Overcoming the Obstacles Between Vision and Reality'
+short_title: Making Ideas Happen
+title: Making Ideas Happen
+tags: []
+rating: 4
+with_note: false
+book_author: Scott Belsky
+---

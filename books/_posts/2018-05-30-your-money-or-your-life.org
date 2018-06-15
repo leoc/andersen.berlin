@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/78428.Your_Money_or_Your_Life
+full_title: Your Money or Your Life
+short_title: Your Money or Your Life
+title: Your Money or Your Life
+tags: []
+rating: 0
+with_note: false
+book_author: Vicki Robin
+---

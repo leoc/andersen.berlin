@@ -1,0 +1,20 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/25814544-sprint
+full_title: 'Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days'
+short_title: Sprint
+title: Sprint
+tags:
+- soft-skills
+- entrepreneurship
+- management
+rating: 0
+with_note: false
+book_author: Jake Knapp
+---
+
+
+
+
+
+

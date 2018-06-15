@@ -1,0 +1,13 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/2980250-die-philosophie-der-stoa-ausgew-hlte-texte
+full_title: Die Philosophie Der Stoa. Ausgewählte Texte
+short_title: Die Philosophie Der Stoa. Ausgewählte Texte
+title: Die Philosophie Der Stoa. Ausgewählte Texte
+tags:
+- non-fiction
+- philosophy
+rating: 0
+with_note: false
+book_author: Wolfgang Weinkauf
+---

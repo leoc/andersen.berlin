@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/29342515-the-coaching-habit
+full_title: 'The Coaching Habit: Say Less, Ask More & Change the Way You Lead Forever'
+short_title: The Coaching Habit
+title: The Coaching Habit
+tags: []
+rating: 0
+with_note: false
+book_author: Michael Bungay Stanier
+---

@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/28815.Influence
+full_title: 'Influence: The Psychology of Persuasion'
+short_title: Influence
+title: Influence
+tags: []
+rating: 4
+with_note: false
+book_author: Robert B. Cialdini
+---

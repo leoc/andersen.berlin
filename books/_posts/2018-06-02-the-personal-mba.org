@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/9512985-the-personal-mba
+full_title: 'The Personal MBA: Master the Art of Business'
+short_title: The Personal MBA
+title: The Personal MBA
+tags: []
+rating: 0
+with_note: false
+book_author: Josh Kaufman
+---
