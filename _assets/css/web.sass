@@ -308,9 +308,50 @@ main article
       font-size: 14px
       margin: 16px 0 8px 0
 
+  blockquote
+    position: relative
+    padding-left: 50px
+    font-style: italic
+    opacity: 0.5
+
+    &:after
+      content: '”'
+      position: absolute
+      left: 0
+      top: 0
+      font-size: 80px
+      line-height: 0.9
+      opacity: 0.25
+
+  dl
+    margin-left: 30px
+    dt
+      font-weight: bold
+    dd
+      margin-left: 30px
+    dd + dt
+      margin-top: 12px
+
+  ul
+    margin-left: 30px
+    list-style-type: disc
+
+  ol
+    margin-left: 30px
+    list-style-type: decimal
+
+  ul, ol
+    li + li
+      margin-top: 12px
+
   h2, h3, h4, h5, h6
     & + p
       margin-top: 12px
+
+  b
+    font-weight: bold
+  i
+    font-style: italic
 
   p
     font-size: 16px
@@ -322,7 +363,7 @@ main article
       line-height: 18px
       max-width: auto
 
-  p + p, p + div, div + p, p + pre, pre + p
+  * + p, p + *
     margin-top: 24px
 
     @media #{$media-lte-mobile-narrow}
