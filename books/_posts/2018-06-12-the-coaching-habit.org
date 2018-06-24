@@ -106,7 +106,7 @@ valuable options for you and your comrade.
 Identify the real problem through the person you are helping and let
 them take responsibility in fixing it themselves.
 
-Let them keep their integrity.
+Let people keep their integrity.
 
 ** "What do you want?"
 
@@ -125,15 +125,13 @@ cautious of the TERA quotient:
 - Rank :: "Are you more important or less important than me?"
 - Autonomy :: "Do I get a say or don't I?"
 
-**To be most effective stay calm and listen.**
-
 ** "What do you think I could do?" / "What do you want from me?"
 
 Do not ask quickly. First deflect. Find out what the other person
 might know to do?
 
-Remember the triangle between **Victim**, **Persecutor** and
-**Rescuer**. Let other people keep their integrity by asking
+Remember the triangle between /Victim/, /Persecutor/ and
+/Rescuer/. Let other people keep their integrity by asking
 questions.
 
 ** "If you are saying yes to this, what are you saying no to?"
@@ -151,8 +149,8 @@ people solving it on their own?
 Reflection is a form of practice.
 #+END_QUOTE
 
-Try to lean from what's been going on. Remind yourself of the
-questions and retrieve answers to future ones.
+Try to learn from what is happening. Remind yourself of the questions
+and retrieve answers to future ones.
 
 * Summary
 
@@ -165,11 +163,8 @@ finding process of others.
 Inception may be a good comparison. Help others to find the power of
 autonomy and creativity within themselves via strategic questions.
 
-* Quotes
-
-
-* Thoughts
+* Thoughts for myself
 
 - Every "yes" to someone else is a "no" to myself.
-- I am especially guilty of switching into advice-giving mode.
--
+- I am feel especially guilty of switching into advice-giving mode.
+- To be most effective stay calm and listen.
