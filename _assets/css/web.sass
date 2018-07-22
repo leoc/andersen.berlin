@@ -314,6 +314,9 @@ main article
     font-style: italic
     opacity: 0.5
 
+    @media #{$media-lte-mobile-narrow}
+      padding-left: 25px
+
     &:after
       content: '”'
       position: absolute
@@ -323,26 +326,44 @@ main article
       line-height: 0.9
       opacity: 0.25
 
+      @media #{$media-lte-mobile-narrow}
+        font-size: 40px
+
   dl
     margin-left: 30px
+    @media #{$media-lte-mobile-narrow}
+      font-size: 12px
+      margin-left: 15px
+
     dt
       font-weight: bold
     dd
       margin-left: 30px
+      @media #{$media-lte-mobile-narrow}
+        margin-left: 15px
     dd + dt
       margin-top: 12px
+      @media #{$media-lte-mobile-narrow}
+        margin-top: 6px
 
   ul
     margin-left: 30px
     list-style-type: disc
+    @media #{$media-lte-mobile-narrow}
+      font-size: 12px
+      margin-left: 15px
 
   ol
     margin-left: 30px
     list-style-type: decimal
+    @media #{$media-lte-mobile-narrow}
+      margin-left: 15px
 
   ul, ol
     li + li
       margin-top: 12px
+      @media #{$media-lte-mobile-narrow}
+        margin-top: 6px
 
   h2, h3, h4, h5, h6
     & + p
