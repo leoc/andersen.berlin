@@ -9,3 +9,192 @@ rating: 4
 with_note: false
 book_author: Robert B. Cialdini
 ---
+
+This one was very nice. I don't know why the covers have to be so
+sensational and dorky at the same time.
+
+In seven entertaining chapters the author describes different ways of
+behavior regarding pursuing and influencing people from a
+psychological perspective citing studies for reference.
+
+Each chapter starts with anecdotes describing situations in which you
+would have had behaved differently but were noticing after the fact.
+
+* Reciprocation
+
+We feel an obligation to people that did us a favor before. Even if
+the returned favor is much bigger than the original one they provided
+before.
+
+This is subconscious.
+
+We might call in obligations that others owe us. And we then might ask
+for too much causing antipathy in the other person. The reverse might
+be true aswell.
+
+If we do not stay conscious and wary of these emotions we poison
+relationships along the way.
+
+#+BEGIN_QUOTE
+To engage in this sort of arrangement  with another is not to be
+exploited by that person through the rule for reciprocation. Quite the
+contrary; it is to participate fairly in the "honored network of
+obligation" that served us so well, both individually and societally,
+from dawn of humanity.
+#+END_QUOTE
+
+*Counter-measure:*
+
+Mr. Cialdini introduces the method of "redefinition" as
+counter-measure to people who try to use the method of reciprocity on
+you.
+
+#+BEGIN_QUOTE
+[...] Define whatever you have received from the inspector —
+extinguisher, safety information, hazard inspection — not as gifts,
+but as sales devices, and you will be free to decline (or accept) his
+purchase offer without even a tug from the reprocity rule.
+*A favor rightly follows a favor—not a piece of sales strategy.*
+#+END_QUOTE
+
+*Remember:*
+
+- Exploitation follows exploitation
+- Favor follows favor
+
+* Commitment & Consistency
+
+** Consistency
+
+#+BEGIN_QUOTE
+Prominent theorists [...] have viewed the desire for consistency as
+the central motivator of our behavior.
+#+END_QUOTE
+
+Our desire to be consistent seems compel us to do things we normally
+wouldn't do. This was interesting for me, as I often found that I
+mostly behave habitually and construct constistency later on which
+leads to more behavior in the same direction.
+
+This reminded me of "Thinking Fast, Thinking Slow" by Daniel
+Kahnemann. We want to preserve energy, so our brain likes to behave
+according to patterns instead of thinking too much:
+
+#+BEGIN_QUOTE
+With our consistency tapes operating, then, we can go about our
+business happily excused from the toil of having to think too much.
+#+END_QUOTE
+
+** Commitment
+
+Commitment seems to be the "click" that is calling the "whirr"
+(automatic reaction) as worded by Mr. Cialdini.
+
+Commitment can be won by the smallest questions that are posed in your
+way! Simple questions like "How do you feel today?" might engage you
+and make you decide to open up for to people.
+
+#+BEGIN_QUOTE
+[...] when a person has signed an order for your mechandise, even
+though the profit is so small it hardly compensates for the time and
+effort of making the call, he is no longer a prospect—he is a customer.
+#+END_QUOTE
+
+…and so are you!
+
+Techniques to invoke commitment:
+
+- "foot-in-the-door-technique" :: Small acts of compliance may open
+     people up for bigger investments.
+- "magic act" :: /Acting/ in certain ways seem to change the views
+     that people have of themselves.
+- "the inner choice" :: We accept inner responsibility for a behavior
+     when we think we have chosen to perform it in the absence of
+     strong outside pressure.
+- "lowballing" :: First offer something really easy or generous. Then
+     something more expensive is introduced and we go on to comply out
+     of commitment to consistency.
+
+* Social Proof
+
+We tend to look for reassurance in the actions of the people around
+us. This brings the author the observation of "pluralistic ignorance".
+
+Think about a situation on the street, where some person is lying on
+the floor seemingly in need of help. Most people just walk by
+because… most people walk by.
+
+#+BEGIN_QUOTE
+[…] The state of pluralistic ignorance "in which each person decides
+that since nobody is concerned, nothing is wrong. Meanwhile, the
+danger may be mounting to the point where a single individual,
+uninfluenced by the seeming calm of others, would react."
+#+END_QUOTE
+
+*Counter-measure:*
+
+Be aware of pluralistic ingorance and try to overcome subconscious automatism.
+
+* Liking
+
+People tend to say "yes" more often to the people they like. This may
+be because of:
+
+- physical attractiveness :: we automatically attribute likability to
+     attractive people
+- similarity :: we like people who are similar to us
+- compliments :: we like to hear positive things about ourselves
+- contact and cooperation :: we like things that are familiar to us
+
+*Counter-measure:*
+
+#+BEGIN_QUOTE
+We need to be sensitive to only one thing related to liking in our
+contacts with compliance pracitioners: the feeling that we have come
+to like the practitioner more quickly or more deeply than we would
+have expected.
+#+END_QUOTE
+
+Then mentally separate the person from the object the practitioner is
+trying to sell.
+
+* Authority
+
+Authority leads people to perform actions without questioning their
+sanity or correctness.
+
+This happens subliminally and must be observed with awareness.
+
+*Counter-measure:*
+
+Question the authority: "How truthful can we expect the expert to be
+here?".
+
+* Scarcity
+
+We sub-consciously act if we think something is scarce and we need to
+act quickly.
+
+** Counter-measure
+
+As soon as you feel the arousal to perform a quick-buy reaction, stop
+short, calm down, take a step back.
+
+Rationalize Pro & Con on paper or in another slow format avoiding
+short-circuit reactions.
+
+* Keypoints
+
+** Counter-measures
+
+Each selling technique can be identified with awareness.
+
+** Use the "magic act" technique to strengthen your own views of yourself
+
+If doing certain things repeatedly changes how you see yourself, you
+could resolve the resistance you feel when you try to do things
+that do not come as easily yet.
+
+An example would be journaling. Answering the question for all the
+things you are grateful for repeatedly, changes the perspective about
+everyday life and yourself.
