@@ -1,0 +1,213 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/13525945-so-good-they-can-t-ignore-you
+full_title: 'So Good They Can''t Ignore You: Why Skills Trump Passion in the Quest
+  for Work You Love'
+short_title: So Good They Can't Ignore You
+title: So Good They Can't Ignore You
+tags:
+- non-fiction
+- computer-science
+- soft-skills
+- entrepreneurship
+rating: 4
+with_note: false
+book_author: Cal Newport
+---
+
+I tried to avoid this book for a while because the title seemed too
+catchy. But I loved *Deep Work* by the same author (*Cal Newport*), so
+I gave it a try.
+
+The main thesis Cal Newport puts forth is that you should not base
+your career choice on passion. Passion is what follows when you become
+"So good they can't ignore you" in whatever subject you chose to pursue.
+
+Within four chapters or four "rules" he describes concepts that are
+paramount for building a good career:
+
+- career capital
+- gaining control
+- finding a mission within the adjacent possibe
+- remarkability
+
+* Don't Follow Your Passion
+
+The first chapter explains why passion should not be the main
+motivation to pursue a career in a certain field.
+
+#+BEGIN_QUOTE
+"I feel like your problem is that you're trying to judge all things in
+the abstract before you do them. That's a tragic mistake."
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+Complex careers often have complex origins that reject the simple idea
+that all you have to do is follow your passion.
+#+END_QUOTE
+
+There are different words to describe the thing we do to make a living:
+
+- Job :: A way to pay the bills
+- Career :: A path toward increasingly better work
+- Calling :: Work that is an important part of your life and a vital
+             part of your identity
+
+This begs the question for what it is that helps us building a career
+and what lets us find a calling. Self-Determination Theory (SDT) tells
+us that motivation, in the workplace or elsewhere, requires that you
+fullfill three basic psychologocal needs — factors described as
+"nutriments" required to feel intrinsically motivated for your work:
+
+- Autonomy :: the feeling that you have control over your day, and
+              that your actions are important
+- Competence :: the feeling that you are good at what you do
+- Relatedness :: the feeling of connection to other people
+
+* Clarity of a Craftsman
+
+#+BEGIN_QUOTE
+The tape doesn't lie!
+#+END_QUOTE
+
+The *craftsman mindest* describes the focus on the quality of the
+output. No little detail should disturb you. Perfection is in the
+quantity of finished deliberately performed acts of practice leading
+to increased quality over time.
+
+The result of the skills you build while following the craftsman
+mindset is your *career capital* which reflects competence.
+
+A job may be evaluated with these three disqualifiers:
+
+1. The job presents few opportunities to distinguish yourself by
+   developing relevant skills that are rare and valuable.
+2. The job focuses on something you think is useless or perhaps even
+   actively bad for the world.
+3. The job forces you to work with people you really dislike.
+
+Any of these disqualify a job as a potential way to build career
+capital.
+
+** Deliberate Practice
+
+To build career capital we have to work hard to build the skills that
+distinguish ourselves from others.
+
+This means that we have to make use of *deliberate practice* to
+overcome any plateaus. Just "showing up and doing the work" is not
+enough.
+
+#+BEGIN_QUOTE
+Deliberate practice is often the opposite of enjoyable.
+#+END_QUOTE
+
+This is not to say that it won't be pleasurable along the way!
+
+#+BEGIN_QUOTE
+"[I thought], if I stay with it, then one day I will have been playing
+for forty years, and anyone who sticks with something for forty years
+will be pretty good at it."
+#+END_QUOTE
+
+* Capital → Control → Mission
+
+The goal of having career capital is control. Control helps us finding
+the autonomy to search for a mission. The mission may bring passion.
+
+** Traps Along the Way
+
+#+BEGIN_QUOTE
+Control that's acquired without career capital is not sustainable.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+The point at which you have acquired enough career capital to get
+meaningful control over your working life is exactly the point when
+you've become valuable enough to your current employer that they will
+try to prevent you from making the change.
+#+END_QUOTE
+
+** Financial Viability
+
+#+BEGIN_QUOTE
+"Money is a neutral indicator of value. By choosing to make money,
+you're aiming to be valuable." — Derek Sivers
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+When deciding whether to follow an appealing pursuit that will
+introduce more control into your work life, seek evidence of whether
+people are willing to pay for it. If you find this evidence, continue.
+If not, move on.
+#+END_QUOTE
+
+* Adjacent Possible
+
+This was an interesting thing for me. I observed that — naturally —
+all ideas are the result of all the input you receive either conscious-
+and sub-consciously from your everyday life. That includes your
+personal and work life.
+
+These possible new combinations of existing information and knowledge
+is a good source to find a mission.
+
+#+BEGIN_QUOTE
+A good career mission is similar to a scientific breakthrough—it's an
+innovation waiting to be discovered in the adjacent possible of your
+field.
+#+END_QUOTE
+
+So career capital increases your value and your sense of competency.
+This increases control. With that increase in competency we increase
+the amount of adjacent possibilities.
+
+(This reminds me of the increase of available optionality from the
+book *Antifragile*; sounds reasonable).
+
+* Experiment to Find the Mission
+
+Further the author encourages the reader to look for potential mission
+in this space of the adjacent possible, by performing little
+experiments towards one specific direction (following the same theme).
+
+#+BEGIN_QUOTE
+"Rather than believing they have to start with a big idea or plan out a
+whole project in advance, they make a methodical series of little bets
+about what might be a good direction, learning critical information
+from lots of little failures and from small but significant wins." —
+Peter Sims
+#+END_QUOTE
+
+* Marketing by being a purple cow
+
+The book references a lot of authors. One is *Seth Godin* with *Purple
+Cow*.
+
+#+BEGIN_QUOTE
+"For his mission to build a sustainable career, it had to produce
+purple cows, the type of remarkable projects that compel people to
+spread the word." — Seth Godin, The Purple Cow
+#+END_QUOTE
+
+** The Law of Remarkability
+
+#+BEGIN_QUOTE
+For a mission-driven project to succeed, it should be remarkable in
+two different ways. First, it must compel people who encounter it to
+remark about it to others. Second, it must be launched in a venue that
+supports such remarking.
+#+END_QUOTE
+
+* Summary
+
+- Deliberate Practice is the key :: Perform all tasks deliberately or not at all
+- Find the *adjacent possible* *purple cow* with my current *career capital* ::
+    I want to be open and find new subjects to combine with my current knowledge.
+  1. Build career capital
+  2. Look for the adjacent possible
+  3. Perform little bets
+  4. Adhere to the Law of Remarkability
+- Accept Strain :: Mental strain is needed for hormesis. Like a muscle
+                   we become stronger by alterating between exhaustion
+                   and relaxation.
