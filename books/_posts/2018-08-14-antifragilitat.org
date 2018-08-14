@@ -1,0 +1,143 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/18948850-antifragilit-t
+full_title: 'Antifragilität: Anleitung für eine Welt, die wir nicht verstehen'
+short_title: Antifragilität
+title: Antifragilität
+tags: []
+rating: 4
+with_note: false
+book_author: Nassim Nicholas Taleb
+---
+*Antifragile* introduced me to the concept of non-linear effects of
+volatility which can be applied to various fields.
+
+The idea of hormesis and eurstress wasn't new to me as it was
+explained to my by my father as I was little. Poison or stress in low
+doses may strengthen the organism to a point where a lethal dosis
+could be easily metabolized or survived.
+
+So the idea of "antifragility" too wasn't entirely new to me. But
+Taleb maps these principles to other domains.
+
+#+BEGIN_QUOTE
+Some things benefit from shocks; they thrive and grow when exposed to
+volatility, randomness, disorder, and stressors and love adventure,
+risk, and uncertainty. Yet, in spite of the ubiquity of the
+phenomenon, there is no word for the exact opposite of fragile. Let us
+call it antifragile. Antifragility is beyond resilience or robustness.
+The resilient resists shocks and stays the same; the antifragile gets
+better
+#+END_QUOTE
+
+I had my problems with the way he writes. His writing feels like a 600
+page rant, so from time to time I was about to throw away the book and
+shout into my room because of the fuzzy-ness of some arguments which
+were dealt out in the most arrogant way.
+
+Also I had my problems with the references not being inline. I would
+have loved to quickly find references for certain arguments which
+seemed superficial from time to time.
+
+Still, the ideas and thoughts on the topic are incredibly interesting.
+I always felt that many people are superficial or dismissive regarding
+risk management. Talebs theories explain what may be missing.
+
+* Skin in the Game
+
+#+BEGIN_QUOTE
+To me, every opinion maker needs to have “skin in the game” in the
+event of harm caused by reliance on his information or opinion (not
+having such persons as, say, the people who helped cause the criminal
+Iraq invasion come out of it completely unscathed). Further, anyone
+producing a forecast or making an economic analysis needs to have
+something to lose from it, given that others rely on those forecasts
+(to repeat, forecasts induce risk taking; they are more toxic to us
+than any other form of human pollution).
+#+END_QUOTE
+
+* Via-negativa
+
+Via negativa is a type of theological thinking that attempts to
+describe God by negation or in other words, by what God is not. Taleb
+extends this by applying the same reasoning to other subjects by
+focusing not on what something is but rather what it is not.
+
+#+BEGIN_QUOTE
+I would add that, in my own experience, a considerable jump in my
+personal health has been achieved by removing offensive irritants: the
+morning newspapers (the mere mention of the names of the fragilista
+journalists Thomas Friedman or Paul Krugman can lead to explosive
+bouts of unrequited anger on my part), the boss, the daily commute,
+air-conditioning (though not heating), television, emails from
+documentary filmmakers, economic forecasts, news about the stock
+market, gym “strength training” machines, and many more.
+#+END_QUOTE
+
+* Lindy Effect
+
+A not-living things (like ideas, books, information and more) life
+expectancy increases with every day of its existance.
+
+A living thing loses in life-expectancy with every day.
+
+So a book that has been a hundred years in print is likely to stay in
+print another hundred years. The opposite is Neomania, a love of
+change for its own sake.
+
+* Barbell Strategy
+
+#+BEGIN_QUOTE
+A dual strategy, a combination of two extremes, one safe and one
+speculative, deemed more robust than a “monomodal” strategy; often a
+necessary condition for antifragility. For instance, in biological
+systems, the equivalent of marrying an accountant and having an
+occasional fling with a rock star; for a writer, getting a stable
+sinecure and writing without the pressures of the market during spare
+time. Even trial and error are a form of barbell.
+#+END_QUOTE
+
+* Green Lumber Fallacy
+
+The Green Lumber Fallacy, Mathematically, is the use of an incorrect
+function that, by chance, returns the correct output, such that one
+conflates g(x) with f(x). The root of the fallacy is that although
+people may be focusing on the right things, due to complexity of the
+thing, they are not good enough to figure it out intellectually.
+
+The term green lumber refers to a story by authors Jim Paul and
+Brendan Moynihan in their book What I Learned Losing A Million
+Dollars, where a trader made a fortune trading lumber he thought was
+literally "green" rather than fresh cut.
+
+#+BEGIN_QUOTE
+The protagonist makes a big discovery. He remarks that a fellow named
+Joe Siegel, one of the most successful traders in a commodity called
+"green lumber," actually thought that it was lumber painted green
+(rather than freshly cut lumber, called green because it had not been
+dried). And he made it his profession to trade the stuff! Meanwhile
+the narrator was into grand intellectual theories and narratives of
+what caused the price of commodities to move, and went bust. It is not
+just that the successful expert on lumber was ignorant of central
+matters like the designation "green." He also knew things about lumber
+that nonexperts think are unimportant. People we call ignorant might
+not be ignorant. The fact is that predicting the order flow in lumber
+and the usual narrative had little to do with the details one would
+assume from the outside are important. People who do things in the
+field are not subjected to a set exam; they are selected in the most
+nonnarrative manner—nice arguments don’t make much
+difference.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+This gets at the idea that a supposed understanding of an investment
+rationale, a narrative or a theoretical model is unhelpful in
+practical trading.
+#+END_QUOTE
+
+* Summary
+
+- Strain is good :: Strain is a stressor that cannot hurt the
+                    antifragile.
+- Do not optimize without redundancy :: Redundancy is a natural
+     property of the antifragile
