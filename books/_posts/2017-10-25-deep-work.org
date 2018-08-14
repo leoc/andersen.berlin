@@ -9,7 +9,112 @@ rating: 5
 with_note: false
 book_author: Cal Newport
 ---
+I enjoyed this book a lot because I feel that I want to do so much but
+accomplish so little. Most of the advice seems so common sense that
+nobody talks about it. Or maybe they talk about it but nobody
+incorporates these concepts sincerely into their life.
 
+With *Deep Work* the computer scientist *Cal Newport* describes
+ideas of ill work ethics, inbalance between types of work and methods
+of how to accomplish deep work.
+
+* Shallow Work vs. Deep Work
+
+#+BEGIN_QUOTE
+Noncognitively demanding, logistical-style tasks, often performed
+while distracted. These efforts tend to not create much new value in
+the world and are easy to replicate.
+#+END_QUOTE
+
+This kind of work is called busy-work and should be avoided or
+off-handed to other people since it is not creating value.
+
+Deep work is the opposite. It is the rare work that generates value
+and should be maximised.
+
+* Deep Work is Valuable
+
+Two core abilities are paramount to thrive in the new economy:
+
+1. The ability to quickly master hard things.
+2. The ability to produce at an elite level, in terms of both quality
+   and speed.
+
+Both abilities are only possible when done deliberately without much
+diversion (if any).
+
+#+BEGIN_QUOTE
+"Men of genius themselves were great only by bringing all their power
+to bear on the point on which they had decided to show their full
+measure." – Sertillanges, The Intellectual Life
+#+END_QUOTE
+
+High-quality Work Produced = (Time Spent) x (Intensity of Focus)
+
+* Principle of Least-Resistance
+
+#+BEGIN_QUOTE
+In a business setting, without clear feedback on the impact of various
+behaviors, to the bottom line, we will tend toward behaviors that are
+easiest at the moment.
+#+END_QUOTE
+
+This means that instead of focussing at the most important task (which
+may require a lot of concentration) we intuitively take an easy task.
+
+This results in busyness as a proxy for productivity:
+
+#+BEGIN_QUOTE
+In the absence of clear indicators of what it means to be productive
+and valuable in their jobs, many knowledge workers turn back toward an
+industrial indicator of productivity: doing lots of stuff in a visible
+manner.
+#+END_QUOTE 
+
+* The Craftsman Approach to Tool Selection
+
+#+BEGIN_QUOTE
+Identify the core factors that determine success and happiness in your
+professional and personal life. Adopt a tool only if its positive
+impact on these factors substantially outweigh its negative impact.
+#+END_QUOTE
+
+Eliminate all distracting media from my life. Deep Work is meaningful.
+
+* Law of the Vital Few / Pareto Principle
+
+#+BEGIN_QUOTE
+In many settings, 80 percent of a given effect is due to just 20
+percent of the possible causes.
+#+END_QUOTE
+
+Meaning that I can probably eliminate 80 percent of the things I do,
+to still reach 80 percent of the outcome from the remaining 20
+percent. Lets optimize!
+
+* Summary
+
+- Work Deeply ::
+  - Create A Deep Work Ritual (Where? For how long? How once started?
+    How to support sustainability?)
+  - Time-boxing for the most important task
+  - Don't Work Alone
+  - Ahere to 4 Disciplines of Execution
+    1. Focus on the Wildly Important — 
+    2. Act on the Lead Measures — Time spent in a deep state
+    3. Keep a Compelling Score Board – e.g. Hours spent working deeply
+    4. Create a Cadence of Accountability
+  - Allow and plan for relaxation from deep work (for example via Shutdown-Routine)
+- Embrace Boredom ::
+  - Don't take breaks from distraction, take breaks from focus
+- Quit Social Media ::
+  - Neither my professional and personal goals do not depend on my
+    use of social media.
+  - Don't use the Internet to entertain yourself
+- Drain the Shallows ::
+  - Be hard to reach
+  - Do more work when answering e-mails (try to answer almost all
+    possible questions that may arise)
 
 
 
