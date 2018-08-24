@@ -35,6 +35,8 @@ books.each do |element|
 
   author = book['authors']['author']['name']
 
+  next if tags.include?('nolist')
+
   header = YAML.dump(
     'layout' => 'reading',
     'link' => book['link'],
