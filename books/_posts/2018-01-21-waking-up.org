@@ -5,19 +5,82 @@ full_title: 'Waking Up: A Guide to Spirituality Without Religion'
 short_title: Waking Up
 title: Waking Up
 tags: []
-rating: 0
+rating: 3
 with_note: false
-book_author: Sam   Harris
+book_author: Sam Harris
 ---
 
+This book was interesting. I like Sam Harris' Podcast because he talks
+with intellectuals of different kinds about the uncontrollable nature
+of our thinking, our place in the community and how science could help
+along the way.
 
+The most interesting fact for me was `callosotomy`. Doctors did
+split the hemispheres in the brain in an attempt to heal or lessen the
+effect of spasms or seizures. Doing that they soon realized that the
+two hemispheres began to form separate identities.
 
+This fact was mind-blowing. Since each of the two hemispheres
+cross-control one side of the body and register one side of the bodies
+perceptive inputs like the eyes (think of [[https://commons.wikimedia.org/wiki/Ren%C3%A9_Descartes#/media/File:Descartes_diagram.png][Descartes]]), the scientist
+could show different things to either side of the brain and the other
+side would not have noticed it.
 
+This suggests that we may inhabit multiple `selves` which are
+forming the resulting selve to alternating degrees.
 
+Sam Harris suggests that we have less control over our thought than
+most of us want to admit. But by being mindful of this very fact we
+may be able to regain some of that control back.
 
+#+BEGIN_QUOTE
+Being mindful is not a matter of thinking more clearly about
+experience, it is the act of experiencing more clearly.
+#+END_QUOTE
 
+Studies have shown that 50 percent of our waking life our mind is
+wandering. In that time the `default-mode network` (a specific region
+of our brain) is more active. This region seems to be responsible for
+our tendency to think about andjudge ourselves, which leads to the
+perception of "I", the single, thinking entity.
 
+Meditation, can lessen the activity in the DMN up to the point that
+experienced meditators can weaken the activity even when they are not
+meditating.
 
+How to approach meditation from different Buddhist schools:
 
+- gradual approach :: focus on "my" breathing until the "I" dissolves
+     and you realize there is no self
+- sudden realization :: begin already assuming the self is an
+     illusion and the self does not exist
 
+Sam Harris seems to favor the latter.
+
+The second half of the book talks about "spirituality". It explains
+that a multitude of spiritual experiences are common to all types of
+believers, as well as non-believers. Thus it must be a concept
+non-specific to religion.
+
+Furthermore Harris describes Eastern Religions as empirical at their
+core as they are constantly concerned with experience and observation.
+As an atheist, I like this way of thinking.
+
+#+BEGIN_QUOTE
+As manuals for contemplative understanding, the Bible and the Koran
+are worse than useless.
+#+END_QUOTE
+
+The rest of the book talks about how to avoid bad gurus and how drugs
+can be part of your spiritual journey. Especially the part about bad
+gurus, though entertaining, feels more like a rant than some practical
+contemplation. 
+
+All in all, I liked the book. 
+
+Since I believe that we are the inevitable product of all the input we
+get from our surroundings, we have to control the receptivity for
+trash information, habitual thinking and automatism in our life to
+find spirituality in our life. Meditation can help taming a wandering
+mind that all too happily rides the wave of the default-mode network!
 
