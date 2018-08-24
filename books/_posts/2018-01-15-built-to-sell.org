@@ -10,14 +10,38 @@ with_note: false
 book_author: John Warrillow
 ---
 
+I really like this books format, way of story telling and the wisdom
+it imparts.
 
+It tells the story of a business owner who worked very hard to start
+and run his design agency and decided it must be possible to sell the
+business and retire early.
 
+Unfortunately he soon realizes that his agency does a lot of things,
+but is not as profitable as he thought it was. By finding a mentor he
+learns step-by-step what's necessary to increase the value of his
+business.
 
+This book helps to gain a vision of how the own journey could look
+like. I think a vision is crucial to formulate the right goals and
+actionable tasks along the way. So this book gave me a lot.
 
+* Take-aways
 
-
-
-
-
-
-
+- Focus on one specific product/service to achieve excellence
+  - Optimally target a niche
+  - Specialize
+- Create a process that can be repeated, refined and scaled
+- Teach other people to perform this process without you
+- Create specialized teams for
+  - ... Sales
+  - ... Management
+  - ... Implementation
+- Incentivize
+  - ... through competition
+  - ... through bonus salaries
+- If planning to sell, let employees benefit
+  - There must be a reason to sell → more sales, larger market, more
+    capital to expand
+  - There must be an outlook to profit from a sale → more sales, larger market, more
+    capital to expand
