@@ -9,3 +9,24 @@ rating: 4
 with_note: false
 book_author: Scott Belsky
 ---
+
+I liked the book. It targets creatives that do not have much structure
+in their lifes. As I am already quite knowledgable regarding GTD
+methods and alike I did not learn so much about processes.
+
+But, I still learned a bit about the shallow psychological parts of
+the book. It discusses the phenomenon of `restistance`. And how we are
+looking for novelty when tasks get too dull or repetitive.
+
+Especially the idea of `project plateau`. Every project has plateaus
+after the initial excitement wanes. At that point the maker needs to
+persist and persevere, but creative types often hop over to other,
+more interesting endeavors, which may lead to a backlog of unfinished
+projects, frustration and maybe burnout.
+
+- Be attentive to the urge of starting something new and persevere
+
+Also it made clear that the creative need processes and structure
+alterating between different roles. You need to be manager and artist
+at once. Only in this fashion can we plan, create and bring forth our
+projects.
