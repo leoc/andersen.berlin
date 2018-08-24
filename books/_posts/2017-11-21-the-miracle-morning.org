@@ -12,14 +12,21 @@ with_note: false
 book_author: Hal Elrod
 ---
 
+This one is hard. Not well written. Many repititions. But all in all
+with a good message. Conquer your day with morning rituals, getting up
+early to have enough time for the important things.
 
+I would not recommend reading it ...
 
+Basically it tells you to find a morning routine that starts at 4:30.
 
+Common sense tells you, that if you get up three hours earlier and you
+train to be ready to crush your most important things quickly, instead
+of spending 2 hours waking up, you will have three hours more that
+day...
 
+Read this blog post instead and take action:
 
+[[https://medium.com/thrive-global/this-morning-routine-will-make-you-a-millionaire-f2309d8005aa][This Morning Routine will make you a millionaire]]
 
-
-
-
-
-
+Click-baity title, but better content than in this book.
