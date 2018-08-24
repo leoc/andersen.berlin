@@ -5,14 +5,43 @@ full_title: 'Sprint: How to Solve Big Problems and Test New Ideas in Just Five D
 short_title: Sprint
 title: Sprint
 tags:
-- soft-skills
-- entrepreneurship
 - management
-rating: 0
+- entrepreneurship
+- soft-skills
+rating: 4
 with_note: false
 book_author: Jake Knapp
 ---
 
+I love this book. It introduces the reader to a process that can help
+you to evaluate a specific solution to a problem within one week.
+
+It discusses: 
+
+- Finding Consensus in a Team
+- How to find a problem
+- Create a specific solution
+- Building a prototype
+- Finding test candidates
+- Evaluating the product with these test candidates
+
+I love the decision to avoid code. You can evaluate solutions just with a
+powerpoint application. Where you can click an object on the slide and
+jump to another view of your virtual prototype.
+
+This idea should be in anyones head who thinks about creating a
+software product! 
+
+1) Think about your solution and the viability first.
+2) Then validate the solution with WYSIWYG tools. Repeat if necessary
+   to refine your vision of the product.
+3) Then eventually begin the implementation.
+
+Overall a book I would recommend. 
+
+Agile software devlopment methodologies also make use the notion of
+SPRINTs as they refine the product in an assimilably recurring
+process.
 
 
 
