@@ -1,0 +1,31 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/9167158-start-small-stay-small
+full_title: 'Start Small, Stay Small: A Developer''s Guide to Launching a Startup'
+short_title: Start Small, Stay Small
+title: Start Small, Stay Small
+tags:
+- soft-skills
+- management
+- entrepreneurship
+rating: 4
+with_note: false
+book_author: Rob Walling
+---
+
+If you want to do anything in the direction of starting an online
+business, I would recommend this book. Together with [[/books/2018/06/02/the-personal-mba/][Personal MBA]] it
+forms the best introduction I can think of right now.
+
+It is a short step-by-step description of finding, validating &
+launching digital products and an introduction on how to setup
+processes and automations so that you make yourself dispensible for
+a smooth business.
+
+The focus lies on small businesses, called micropreneurship or
+bootstrapping, which can be done by one person or a small team.
+
+This will mean you will target markets that are small enough so that
+you can target them with a small budget.
+
+Definitly worth the read. I loved the no-bullshit approach.
