@@ -1,0 +1,204 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/2477223.Managing_Oneself
+full_title: Managing Oneself
+short_title: Managing Oneself
+title: Managing Oneself
+tags:
+- non-fiction
+- soft-skills
+- management
+rating: 5
+with_note: false
+book_author: Peter F. Drucker
+---
+This was a quick and easy read. In the smalles 54 pages I have ever
+seen Peter F. Drucker summarizes what is important about managing
+oneself. No fluff, no excursions in unnecessary anecdotes.
+
+* Get to know yourself
+
+Through **feedback analysis** you may determine what your style of
+performing and accomplishing is. Knowing this is paramount to success
+and sanity while building a career.
+
+** What are my strengths?
+
+- Build on these strengths primarily
+- Do not waste too much energy on eradicating weaknesses :: The energy
+     needed will be much higher than concentrating on your talents and
+     strengths.
+
+Note: I define strengths as parts of my life that:
+
+- come easy :: There is not too much resistance in the beginning and
+     when finishing work you have some feeling of accomplishment (be
+     it that you learned something new or that you crossed off
+     substantial part of your planned todos)
+- allow for a successes :: Having small wins regularily helps building momentum.
+- minimize setbacks :: Avoiding failures so large, that they
+     could ruin your motivation, helps keeping the momentum (failures
+     are normal, and help you learn, do not expect ).
+- statistically provide fun and contentment :: Waking up and dreading
+     the task at hand will cause cancer (or at least cancerous
+     thoughts).
+
+But what I try to remind me of every day is:
+
+Resistance, Failure & Frustration is normal, but balance is key!
+
+** How do I perform?
+
+Everyone has his or her preferred way of performing. But only few ask
+themselves what it is for them? And even fewer act on this knowledge!
+
+#+BEGIN_QUOTE
+Am I a reader or a listener?
+#+END_QUOTE
+
+*** Am I a reader or a listener?
+*** Am I an adviser or a decision maker?
+*** Do I perform well under stress or do I need a highly structured and predictable environment?
+*** Do I work better in large organizations or a small one?
+** How do I learn?
+
+Do I learn through writing or through talking?
+
+** What are my values?
+
+Value conflicts can cause the most friction and frustration in oneself
+and in organizations.
+
+I should review my values and the compatibility with all endeavors
+regularly.
+
+** Where do I belong?
+
+Answering these questions will help you to answer the question:
+"Where do I belong?"
+
+It will take time. If you grow and develop yourself, it might change!
+
+** Where should I contribute to?
+
+#+BEGIN_QUOTE
+What does the situation require?
+
+Given my strengths, my way of performing, my values, how can I make the
+greatest contribution to what needs to be done?
+
+And finally, What results have to be achieved to make a difference?
+— page 35
+#+END_QUOTE
+
+* Working with others
+
+Today many call them "soft-skills". But I like the term "core-skills"
+much more.
+
+P.F.Drucker simply wrote "work on your manners", which I thought of:
+
+- be nice
+- be empathetic
+- listen to people
+- put yourself in the shoes of others
+- do not talk badly about people
+
+I think these things need to be articulated explicitly today. In my
+romatic imagination the early 20th century had these things worked out
+much more intrinsically, before the culture of communication caused by
+the anonymity of the internet worked itself back into public
+discourse.
+
+#+BEGIN_QUOTE
+It is the law of nature that two moving bodies in contact with
+eachother create friction. This is as true for human beings as it is
+for inanimate objects. — page 8
+#+END_QUOTE
+
+** Let empathy and curiosity rule
+
+#+BEGIN_QUOTE
+[…] accept the fact that other people are as much individuals as you
+yourself are. They perversely insist on behaving like human beings.
+
+This means they too have their strengths; they too have their ways of
+getting things done; they too have their values. To be effective,
+therefore, you have to know the strengths, the performance models, and
+the values of your coworkers. — page 38
+#+END_QUOTE
+
+- Nobody has the same strengths
+- Nobody has the same work ethics
+- Nobody has the same performance models
+- Nobody has the same ways of learning
+- Nobody has the same ways of communicating
+- Nobody has the same values
+- Nobody has the same bio-rhythm
+
+Note: I have observed the reluctance in many people to trying to find
+out how other people live or perform, or how to improve the
+effectiveness of team-work.
+
+The more everyone tries to match a certain model of communication that
+includes everyone involved the more effective it will become. Although
+that needs to be reciprocal, one may have to introduce others to these
+concepts slowly. I found [[/books/2017/10/05/nonviolent-communication/][Nonviolent Communication]] to be a good
+starting point to talk about such shortcomings in a team or with a
+person.
+
+** Communicate Well
+
+Do not assume people will proactively search for and communicate these
+findings, you just found out.
+
+You **have to tell and ask** proactively!
+
+#+BEGIN_QUOTE
+[…] people do not know what other people are doing and how they do
+their work, or what contribution the other people are concentrating on
+and what results they expect. And the reason they do not know is that
+they have not asked and therefore have not been told. — page 41
+#+END_QUOTE
+
+When starting a new team or project, evaluate ground rules that
+everyone can identify with. And let everyone know about the
+preferred models of everybody else.
+
+This means, express yourself:
+
+#+BEGIN_QUOTE
+This is what I am good at. This is how I work. These are my values.
+This is my contribution I plan to concentrate on and the results I
+should be expected to deliver. — page 44
+#+END_QUOTE
+
+Then ask:
+
+#+BEGIN_QUOTE
+And what do I need to know about your strengths, how you perform, your
+values, and your proposed contribution? — page 44
+#+END_QUOTE
+
+* Plan for Optionality
+
+Knowledge workers today will not work 40 years and retire happily.
+Most will do many things. Today I think it is a must to plan for many
+eventualities. This makes trying to create an abundance of options a
+crucial part of ones life.
+
+P.F.Drucker talks about "parallel jobs". I am planning to create
+parallel jobs too. Building things intrigues me. I want to test,
+rework and start anew!
+
+* Summary
+
+Overall this is the most concise self-help book that I have read so
+far. Pure pragmatism. A book cannot tell you what your decisions
+should be or lay out the perfect plan until you are happily smiling on
+your death bed.
+
+It introduces a few questions that — if answered and reiterated
+frequently — can help to find the right trajectory.
+
+I want to read more of that man's thoughts!
