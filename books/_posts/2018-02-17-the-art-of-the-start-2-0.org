@@ -6,10 +6,16 @@ full_title: 'The Art of the Start 2.0: The Time-Tested, Battle-Hardened Guide fo
 short_title: The Art of the Start 2.0
 title: The Art of the Start 2.0
 tags: []
-rating: 4
+rating: 2
 with_note: false
 book_author: Guy Kawasaki
 ---
+It is an unordered book. Much has been discussed in other books in a
+much cleaner way.
+
+Maybe it's something for other minds...
+
+
 
 
 
