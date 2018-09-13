@@ -8,7 +8,8 @@ env:
 install:
   - bundle install
   - pip install --user awscli
-script: ruby grab_goodreads.rb && jekyll build
+  - git submodule update --init --recursive _gitsubmodules/emacs.d
+script: ruby prepare_files.rb && ruby grab_goodreads.rb && jekyll build
 branches:
   only:
   - master
