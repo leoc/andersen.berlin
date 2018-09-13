@@ -96,10 +96,6 @@ a
   color: #0080ee
   text-decoration: none
 
-a[href*="//"]:after
-  content: '↪'
-  margin-left: 4px
-
 body
   font-family: 'Lato', sans-serif
   color: #2d2d2d
@@ -390,6 +386,13 @@ main article
     @media #{$media-lte-mobile-narrow}
       margin-top: 18px
 
+
+  .monospace
+    font-family: 'Cousine', monospace
+    font-size: 13px
+    @media #{$media-lte-mobile-narrow}
+      font-size: 11px
+
   div.highlight
     max-width: 978px
     overflow-x: auto
@@ -419,13 +422,13 @@ main article
 
   code
     font-family: 'Cousine', monospace
-    display: inline-block
-    font-size: 12px
+    display: inline
+    font-size: 12.5px
     line-height: 24px
-    padding: 0 5px
+    padding: 5px 5px 2px 5px
     background-color: #e5e5e5
     @media #{$media-lte-mobile-narrow}
-      font-size: 10px
+      font-size: 11px
 
   iframe
     width: 100%
@@ -490,3 +493,29 @@ ul.posts, ul.books
     margin-top: 64px
     @media #{$media-lte-mobile-narrow}
       margin-top: 48px
+
+span.highlight
+  background: #deeffd
+  padding: 5px 5px 2px 5px
+
+.projects
+  max-width: 978px
+  display: flex
+  flex-wrap: wrap
+  @media #{$media-lte-mobile-narrow}
+    display: block
+    margin-left: -15px
+    margin-right: -15px
+
+  .project
+    flex: 1 0 50%
+    padding: 18px
+    background: #eee
+    width: 50%
+    @media #{$media-lte-mobile-narrow}
+      width: 100%
+    h4
+      margin: 0
+
+    p
+      color: #000
