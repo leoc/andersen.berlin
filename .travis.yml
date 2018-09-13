@@ -6,9 +6,9 @@ env:
     # speeds up installation of html-proofer:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 install:
+  - git submodule update --init --recursive _gitsubmodules/emacs.d
   - bundle install
   - pip install --user awscli
-  - git submodule update --init --recursive _gitsubmodules/emacs.d
 script: ruby prepare_files.rb && ruby grab_goodreads.rb && jekyll build
 branches:
   only:
