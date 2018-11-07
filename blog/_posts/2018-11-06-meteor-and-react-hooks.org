@@ -1,0 +1,169 @@
+---
+layout: post
+title: Meteor and React Hooks
+tags:
+  - til
+---
+
+Since react hooks have been introduced I tried to rephrase my
+components with `react-hooks` and I came to the conclusion that they
+help me to write less code that is much more readable.
+
+Currently I am working again with Meteor and to my joy Meteor 1.8 was
+just released, providing react templates. As of now it is suggested to
+use the `withTracker` HOC from ~meteor/react-meteor-data~ to subscribe
+to and fetch data.
+
+Although that can be a quite clean solution I wanted to give
+`react-hooks` a try.
+
+Via `meteor create --react <<projectname>>` this component is generated:
+
+#+BEGIN_SRC rjsx
+import React, { Component } from 'react';
+
+import { withTracker } from 'meteor/react-meteor-data';
+
+import Links from '../api/links';
+
+class Info extends Component {
+  render() {
+    const links = this.props.links.map(
+      link => this.makeLink(link)
+    );
+
+    return (
+      <div>
+        <h2>Learn Meteor!</h2>
+        <ul>{ links }</ul>
+      </div>
+    );
+  }
+
+  makeLink(link) {
+    return (
+      <li key={link._id}>
+        <a href={link.url} target="_blank">{link.title}</a>
+      </li>
+    );
+  }
+}
+
+export default InfoContainer = withTracker(() => {
+  return {
+    links: Links.find().fetch(),
+  };
+})(Info);
+#+END_SRC
+
+My proposal for an API that uses `react-hooks` looks like that:
+
+#+BEGIN_SRC rjsx
+import { useMeteorSubscription, useMeteorData } from 'meteor/react-meteor-hooks';
+
+import Links from '../api/links';
+
+export const Info = function (props) {
+  const loading = useMeteorSubscription('links');
+  const links = useMeteorData(() => Links.find().fetch());
+
+  if(loading) return (<div>Loading links ...</div>);
+
+  return (
+    <ul>
+      {links.map((link) => (
+        <li key={link._id}>
+          <a href={link.url} target="_blank">{link.title}</a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+#+END_SRC
+
+I created a [[https://github.com/meteor/react-packages/pull/263][pull request]] and a [[https://github.com/leoc/react-meteor-hooks-example][sample project]].
+
+* useMeteorSubscription
+
+#+BEGIN_SRC js
+import { Meteor } from 'meteor/meteor';
+import { Tracker } from 'meteor/tracker';
+import { useEffect, useState } from 'react';
+
+let useMeteorSubscription;
+
+if (Meteor.isServer) {
+  // When rendering on the server, we don't want to use the Tracker.
+  // The subscription is always ready on the server.
+  useMeteorSubscription = () => true;
+} else {
+  useMeteorSubscription = (publication, ...parameters) => {
+    const [loading, setLoading] = useState(true);
+    let handle, computation;
+
+    const cleanUp = () => {
+      handle && handle.stop();
+      handle = null;
+      computation && computation.stop();
+      computation = null;
+    }
+
+    useEffect(() => {
+      if(computation) cleanUp();
+
+      Tracker.autorun((currentComputation) => {
+        computation = currentComputation;
+
+        handle = Meteor.subscribe(publication, ...parameters);
+        setLoading(!handle.ready());
+      });
+
+      return cleanUp;
+    }, [publication, ...parameters]);
+
+    return loading;
+  }
+}
+
+export default useMeteorSubscription;
+#+END_SRC
+
+* useMeteorData
+
+#+BEGIN_SRC js
+import { Meteor } from 'meteor/meteor';
+import { Tracker } from 'meteor/tracker';
+import { useEffect, useState } from 'react';
+
+let useMeteorData;
+
+if (Meteor.isServer) {
+  // When rendering on the server, we don't want to use the Tracker.
+  // We only do the first rendering on the server so we can get the data right away
+  useMeteorData = getMeteorData => getMeteorData();
+} else {
+  useMeteorData = (getMeteorData, inputs = []) => {
+    const [meteorData, setMeteorData] = useState(getMeteorData());
+    let computation;
+
+    const cleanUp = () => {
+      computation.stop();
+      computation = null;
+    }
+
+    useEffect(() => {
+      if(computation) cleanUp();
+
+      Tracker.autorun((currentComputation) => {
+        computation = currentComputation;
+        setMeteorData(getMeteorData());
+      });
+
+      return cleanUp;
+    }, inputs);
+
+    return meteorData;
+  }
+}
+export default useMeteorData;
+#+END_SRC
