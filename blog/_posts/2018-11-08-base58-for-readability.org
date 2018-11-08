@@ -1,0 +1,15 @@
+---
+layout: post
+title: Base58 for readability
+tags:
+  - til
+---
+
+When reading [[/books/2018/09/16/bitcoin-blockchain-grundlagen-und-programmierung/][Bitcoin & Blockchain]] by Andreas M. Antonopoulos I
+stumbled upon Base58.
+
+I cannot deny that I thought back with shame on all those times I
+tried to implement procedures that generated random human readable
+identifiers for different platforms.
+
+Let's rejoice and use [[https://en.wikipedia.org/wiki/Base58][Base58]]!
