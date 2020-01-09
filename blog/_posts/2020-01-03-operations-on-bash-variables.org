@@ -1,0 +1,46 @@
+---
+layout: post
+title: Operations on Bash Variables and the Usual Suspects
+tags:
+  - til
+  - bash
+  - variables
+---
+
+Lately I have been catching myself looking up bash variable operations
+too often. This is something I want to keep in the back of my head.
+
+The Bash Beginners Guide gives a good overview on [[https://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_10_03.html][Operations on variables]].
+
+* TL;DR
+
+| *Operation*                   | *Description*                         |
+|-----------------------------+-------------------------------------|
+| ~${#STR}~                     | Length of the value of ~$STR~         |
+| ~${STR:-test}~                | Default ~$STR~ to "test"              |
+| ~[ -z "${INT:-}" ] && INT=80~ | Default ~$INT~ to value ~80~            |
+|-----------------------------+-------------------------------------|
+| ~${STR:OFFSET}~               | Keep everything after ~OFFSET~        |
+| ~${STR:OFFSET:LENGTH}~        | Keep ~LENGTH~ characters after ~OFFSET~ |
+|-----------------------------+-------------------------------------|
+| ~${STR/PATTERN/STRING}~       | Replace first occurence of ~STRING~   |
+| ~${STR//PATTERN/STRING}~      | Replace all occurences of ~STRING~    |
+|-----------------------------+-------------------------------------|
+| ~${VAR#WORD}~                 | Remove first occurence of ~WORD~      |
+| ~${VAR##WORD}~                | Remove all occurences of ~WORD~       |
+|-----------------------------+-------------------------------------|
+| ~${VAR#PATTERN}~              | Remove shortest match of ~PATTERN~    |
+| ~${VAR##PATTERN}~             | Remove longest match of ~PATTERN~     |
+|-----------------------------+-------------------------------------|
+| ~${VAR%WORD}~                 | Keep first occurence of ~WORD~        |
+| ~${VAR%%WORD}~                | Keep all occurences of ~WORD~         |
+|-----------------------------+-------------------------------------|
+| ~${VAR%PATTERN}~              | Keep shortest match of ~PATTERN~      |
+| ~${VAR%%PATTERN}~             | Keep longest match of ~PATTERN~       |
+
+* Usual Suspects
+
+| *Operation*  | *Description*                    | *Effectively*   |
+|------------+--------------------------------+---------------|
+| ~${VAR##*/}~ | Remove path until filename     | Keep filename |
+| ~${VAR%/*}~  | Keep the path without filename | Keep dirname  |
