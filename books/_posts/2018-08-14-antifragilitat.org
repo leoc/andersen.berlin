@@ -9,6 +9,7 @@ rating: 4
 with_note: false
 book_author: Nassim Nicholas Taleb
 ---
+
 *Antifragile* introduced me to the concept of non-linear effects of
 volatility which can be applied to various fields.
 

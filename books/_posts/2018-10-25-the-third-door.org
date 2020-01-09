@@ -1,0 +1,13 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/36739769-the-third-door
+full_title: 'The Third Door: The Wild Quest to Uncover How the World''s Most Successful
+  People Launched Their Careers'
+short_title: The Third Door
+title: The Third Door
+tags:
+- soft-skills
+rating: 5
+with_note: false
+book_author: Alex Banayan
+---

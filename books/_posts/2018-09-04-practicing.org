@@ -5,8 +5,8 @@ full_title: 'Practicing: A Musician''s Return to Music'
 short_title: Practicing
 title: Practicing
 tags:
-- music
 - philosophy
+- music
 rating: 5
 with_note: false
 book_author: Glenn Kurtz

@@ -1,0 +1,35 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/26123.Learned_Optimism
+full_title: 'Learned Optimism: How to Change Your Mind and Your Life'
+short_title: Learned Optimism
+title: Learned Optimism
+tags:
+- soft-skills
+- psychology
+- '2019'
+rating: 4
+with_note: false
+book_author: Martin E.P. Seligman
+---
+
+An interesting read. The first 11 chapters discuss the need for
+optimism. It explains depression as a symptom of our increasingly
+individualistic self and provides some questionnaires to evaluate ones
+disposition to pessimistic or negative thoughts along a variety of
+examples from other people. I skimmed or skipped much of it, because I
+already know a lot about automatic negative thoughts and my own hang
+to distortion of reality by somewhat negative beliefs.
+
+Luckily the last 4 chapters are a quick summary of the methods and
+techniques for which I started this book.
+
+The core principle follows the ABCDE method developed by Albert Ellis
+for the Rational Emotive Behavior Therapy (REBT). The method handles
+all situations in the same way:
+
+- A (Adversity) :: Identify the adversity that lead to pessimistic thinking
+- B (Belief) :: Identify your belief
+- C (Consequences) :: Notice the negative automatic thinking and the resulting consequences
+- D (Disputation) :: Ask for evidence? alternatives? implications? usefulness?
+- E (Energization) :: Be attentive to the change of emotion and energy, when rectifying your beliefs and earlier proposed consequences

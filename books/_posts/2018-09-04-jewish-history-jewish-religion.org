@@ -10,6 +10,7 @@ with_note: false
 book_author: Israel Shahak
 ---
 
+
 I had a discussion with a friend about the Isreal-Palestine-conflict
 and the position of Isreal. It became a heated discussion. My naive
 standpoint is, that every person needs a place to live, to call their

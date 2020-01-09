@@ -1,0 +1,19 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/40876575-utopia-for-realists
+full_title: 'Utopia for Realists: How We Can Build the Ideal World'
+short_title: Utopia for Realists
+title: Utopia for Realists
+tags: []
+rating: 5
+with_note: false
+book_author: Rutger Bregman
+---
+
+Perhaps the best book I read in 2019. A book that invites one to dream
+of a better world. Discussing universal basic income and many other
+things as the solution to todays problems of increasing automation,
+unemployment & poverty from a rather pragmatic point of view.
+
+I also recommend most interviews of the author on youtube. A
+light and refreshing turn on todays social problems.

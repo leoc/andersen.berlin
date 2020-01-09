@@ -1,0 +1,13 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/306940.Impro
+full_title: Impro
+short_title: Impro
+title: Impro
+tags:
+- soft-skills
+- philosophy
+rating: 5
+with_note: false
+book_author: Keith Johnstone
+---

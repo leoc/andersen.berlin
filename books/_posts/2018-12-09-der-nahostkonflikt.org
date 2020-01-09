@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/3354597-der-nahostkonflikt
+full_title: Der Nahostkonflikt
+short_title: Der Nahostkonflikt
+title: Der Nahostkonflikt
+tags: []
+rating: 4
+with_note: false
+book_author: Rolf Steininger
+---

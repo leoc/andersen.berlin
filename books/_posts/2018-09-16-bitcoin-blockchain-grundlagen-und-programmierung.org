@@ -1,0 +1,14 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/39999392-bitcoin-blockchain---grundlagen-und-programmierung
+full_title: 'Bitcoin & Blockchain - Grundlagen und Programmierung: Die Blockchain
+  verstehen, Anwendungen entwickeln'
+short_title: Bitcoin & Blockchain
+title: Bitcoin & Blockchain
+tags:
+- computer-science
+- non-fiction
+rating: 5
+with_note: false
+book_author: Andreas M. Antonopoulos
+---

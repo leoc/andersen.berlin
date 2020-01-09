@@ -10,6 +10,9 @@ with_note: false
 book_author: Robert B. Cialdini
 ---
 
+
+
+
 This one was very nice. I don't know why the covers have to be so
 sensational and dorky at the same time.
 

@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/41212411-desintegriert-euch
+full_title: Desintegriert euch!
+short_title: Desintegriert euch!
+title: Desintegriert euch!
+tags: []
+rating: 5
+with_note: false
+book_author: Max Czollek
+---

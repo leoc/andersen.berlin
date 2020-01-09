@@ -1,0 +1,12 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/7723797-business-model-generation
+full_title: Business Model Generation
+short_title: Business Model Generation
+title: Business Model Generation
+tags:
+- '2019'
+rating: 5
+with_note: false
+book_author: Alexander Osterwalder
+---

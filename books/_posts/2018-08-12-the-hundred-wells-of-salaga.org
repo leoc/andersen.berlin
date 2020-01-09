@@ -9,6 +9,7 @@ rating: 5
 with_note: false
 book_author: Ayesha Harruna Attah
 ---
+
 This one was a very interesting read.  Beginning my holidays I
 decided to let a book of fiction slip into my stash of books and I do
 not regret it at all.

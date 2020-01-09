@@ -5,13 +5,14 @@ full_title: Managing Oneself
 short_title: Managing Oneself
 title: Managing Oneself
 tags:
-- non-fiction
 - soft-skills
+- non-fiction
 - management
 rating: 5
 with_note: false
 book_author: Peter F. Drucker
 ---
+
 This was a quick and easy read. In the smalles 54 pages I have ever
 seen Peter F. Drucker summarizes what is important about managing
 oneself. No fluff, no excursions in unnecessary anecdotes.

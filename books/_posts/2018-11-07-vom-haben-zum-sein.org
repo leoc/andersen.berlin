@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/1979739.Vom_Haben_zum_Sein
+full_title: Vom Haben zum Sein
+short_title: Vom Haben zum Sein
+title: Vom Haben zum Sein
+tags: []
+rating: 5
+with_note: false
+book_author: Erich Fromm
+---

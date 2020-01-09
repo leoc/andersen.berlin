@@ -1,0 +1,11 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/40745.Mindset
+full_title: 'Mindset: The New Psychology of Success'
+short_title: Mindset
+title: Mindset
+tags: []
+rating: 5
+with_note: false
+book_author: Carol S. Dweck
+---

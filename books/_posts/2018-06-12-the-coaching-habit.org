@@ -5,19 +5,11 @@ full_title: 'The Coaching Habit: Say Less, Ask More & Change the Way You Lead Fo
 short_title: The Coaching Habit
 title: The Coaching Habit
 tags: []
-rating: 0
+rating: 4
 with_note: false
 book_author: Michael Bungay Stanier
 ---
 
-The Coaching Habit was a surprise. I saw some comments about the book
-and recommended it to a friend who was trying to spark some motivation
-and insights in a younger friend who seems to have a lot of potential.
-
-I did not read the book for a while. But now I finished it and I really
-liked its ideas and format.
-
----
 
 I think it is a good accompanying read to [[/books/2017/10/05/nonviolent-communication/][Nonviolent Communication]] by
 Marshall B. Rosenberg.

@@ -1,0 +1,16 @@
+---
+layout: reading
+link: https://www.goodreads.com/book/show/37976541-bad-blood
+full_title: 'Bad Blood: Secrets and Lies in a Silicon Valley Startup'
+short_title: Bad Blood
+title: Bad Blood
+tags:
+- '2019'
+rating: 4
+with_note: false
+book_author: John Carreyrou
+---
+A really interesting read. I did not hear about this unbelievable
+story of a narcissistic Silicon Valley CEO deluding the public and
+investors and churning through broken employee after employee until
+everything busts.

@@ -5,7 +5,47 @@ full_title: 'The Personal MBA: Master the Art of Business'
 short_title: The Personal MBA
 title: The Personal MBA
 tags: []
-rating: 0
+rating: 4
 with_note: false
 book_author: Josh Kaufman
 ---
+
+
+
+I don't know how I came to reading this book. If I remember correctly
+I found the link to its Amazon page via a blog article that
+recommended it due to its form. It reads a lot like a glossary,
+introducing all the keywords necessary for starting and running a
+business and pointing into the direction of further reading material.
+
+I enjoyed it a lot. Most of the stuff wasn't new to me, but some were
+formulated differently changing the perspective a bit.
+
+It felt a lot like a reference book. You can directly jump to the
+topics of your interests. If a keyword is occurring again throughout
+the book, it is printed in bold so you know there is a mini chapter
+for an explanation.
+
+I don't know whether this book replaces an actual MBA degree but I
+think it is a wonderful introduction for people who started a business
+with a different skill set (like engineering) and want to learn more
+about the basics of management.
+
+* Value Creation
+* Marketing
+* Sales
+* Value Delivery
+* Finance
+* The Human Mind
+* Working With Yourself
+
+I liked the concept of /Akrasia/, which describes the experience of
+knowing that we should do something or that a specific action would be
+in our best interest but we do something different instead…
+
+The idea of /Monoidealism/ reminds me of the book [[#][*Deep Work* by Cal Newport]].
+
+* Working With Others
+* Understanding Systems
+* Analyzing Systems
+* Improving Systems
