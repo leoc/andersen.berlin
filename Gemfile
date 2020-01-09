@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.7.0"
+gem "jekyll", "~> 3.7.4"
 gem "org-ruby"
 gem "pygments.rb"
 gem "html-proofer"
