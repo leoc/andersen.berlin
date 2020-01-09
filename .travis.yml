@@ -1,7 +1,7 @@
 dist: trusty
 language: ruby
 rvm:
-- 2.3.3
+- 2.3
 env:
   global:
     # speeds up installation of html-proofer:
