@@ -4,9 +4,9 @@ title: Ira Glass on Taste and Talent
 tags:
   - thoughts
 ---
-A quote by Ira Glass left me thinking about my own thought on how
-everything I do does not compare to what I ought to do in the
-beginning...
+
+A quote by Ira Glass left me thinking about my feeling how everything
+I do does not compare to what I ought to do in the beginning...
 
 #+BEGIN_QUOTE
 Nobody tells this to people who are beginners, I wish someone told me.
