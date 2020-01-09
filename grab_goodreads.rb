@@ -19,7 +19,9 @@ books = client.shelf(42730111, "read").books
 books.each do |element|
   book = element['book']
 
-  date = DateTime.parse(element['read_at'] || element['date_added']).utc
+  next unless element['read_at']
+
+  date = DateTime.parse(element['read_at']).utc
 
   full_title = book['title']
 
