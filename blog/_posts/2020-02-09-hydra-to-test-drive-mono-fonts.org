@@ -1,0 +1,55 @@
+---
+layout: post
+title: Hydra to Test-drive Mono Fonts
+tags:
+  - emacs
+  - snippet
+---
+
+[[/images/posts/2020-02-09-hydra-example.gif]]
+
+This hydra maps ~h~ and ~k~ for cycling through Mono fonts installed on
+your system:
+
+#+BEGIN_SRC emacs-lisp
+(require 's)
+(require 'dash)
+
+(defun leoc/s-contains-mono (name)
+  (and (s-contains-p "mono" name t)
+       (not (s-contains-p "italic" name t))
+       (not (s-contains-p "bold" name t))))
+
+(setq leoc/frame-font-loop
+      (-filter
+       'leoc/s-contains-mono
+       (x-list-fonts "*" nil (selected-frame))))
+(setq leoc/current-frame-font-index 0)
+
+(defun leoc/cycle-frame-font (direction)
+  (let* ((current-font-index leoc/current-frame-font-index)
+	 (next-font-index (mod (+ current-font-index direction) (length leoc/frame-font-loop)))
+	 (next-font (nth next-font-index leoc/frame-font-loop)))
+    (message "Setting new frame font (index %S): %S" leoc/current-frame-font-index next-font)
+    (set-frame-font next-font)
+    (if (null (assq 'font default-frame-alist))
+	(add-to-list 'default-frame-alist
+		     `(font . ,next-font))
+      (setcdr (assq 'font default-frame-alist) next-font))
+    (setq leoc/current-frame-font-index next-font-index)))
+
+(defun leoc/cycle-next-frame-font ()
+  "Cycle to next font in list."
+  (interactive)
+  (leoc/cycle-frame-font +1))
+
+(defun leoc/cycle-prev-frame-font ()
+  "Cycle to previous font in list."
+  (interactive)
+  (leoc/cycle-frame-font -1))
+
+(defhydra hydra-frame-font nil
+  "Cycle through mono fonts"
+  ("k" leoc/cycle-next-frame-font "Next font")
+  ("j" leoc/cycle-prev-frame-font "Previous font"))
+#+END_SRC
