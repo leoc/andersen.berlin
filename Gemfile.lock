@@ -98,7 +98,7 @@ GEM
     minitest (5.10.3)
     multi_json (1.12.2)
     netrc (0.11.0)
-    nokogiri (1.8.2)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     oauth (0.5.3)
     org-ruby (0.9.12)
